@@ -78,11 +78,151 @@
                         <outlet property="iconImage" destination="rQb-Kz-Jii" id="OhY-cN-VCI"/>
                         <outlet property="noteLabel" destination="o8a-cw-fgu" id="u4M-BF-z6f"/>
                         <outlet property="startConvoButton" destination="p6h-Hq-QFs" id="QdK-r6-eVW"/>
+                        <segue destination="oWP-j5-ljx" kind="show" id="wvy-4Y-l6c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="955.07246376811599" y="93.75"/>
+            <point key="canvasLocation" x="748" y="94"/>
+        </scene>
+        <!--HomeViewController-->
+        <scene sceneID="JPF-cv-jEA">
+            <objects>
+                <viewController title="HomeViewController" id="oWP-j5-ljx" customClass="HomeViewController" customModule="Converse" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bZk-Yx-sLY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Converse." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SfD-bx-WUb">
+                                <rect key="frame" x="25" y="128" width="184.5" height="53.5"/>
+                                <fontDescription key="fontDescription" name="NotoSansOriya-Bold" family="Noto Sans Oriya" pointSize="38"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Zs-nx-gqt">
+                                <rect key="frame" x="298" y="138" width="21" height="24"/>
+                                <state key="normal" image="calender">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zjr-E0-vFG">
+                                <rect key="frame" x="354" y="138" width="25" height="25"/>
+                                <state key="normal" image="setting">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ry2-pa-qVE">
+                                <rect key="frame" x="135" y="421.5" width="59" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LY1-cM-GnY">
+                                <rect key="frame" x="254" y="424.5" width="25" height="25"/>
+                                <state key="normal" image="ant-design_edit-outlined">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Ellipse 2" translatesAutoresizingMaskIntoConstraints="NO" id="MTe-5L-yy4">
+                                <rect key="frame" x="100" y="206.5" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Qwh-3j-SdE"/>
+                                    <constraint firstAttribute="width" constant="200" id="xwm-oW-Bwm"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Ellipse 1" translatesAutoresizingMaskIntoConstraints="NO" id="6YL-4w-VqY">
+                                <rect key="frame" x="119" y="225" width="164" height="164"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="164" id="ojU-JX-ogO"/>
+                                    <constraint firstAttribute="height" constant="164" id="s2Z-nz-DAg"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mcU-3g-KkR">
+                                <rect key="frame" x="132" y="238" width="139" height="139"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="139" id="OZa-Q8-l9e"/>
+                                    <constraint firstAttribute="height" constant="139" id="dnj-Ng-3t4"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9oZ-wT-zi2">
+                                <rect key="frame" x="30" y="582" width="354" height="55"/>
+                                <color key="backgroundColor" red="0.050980392159999999" green="0.094117647060000004" blue="0.46274509800000002" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="ahQ-WY-JjD"/>
+                                </constraints>
+                                <state key="normal" title="📖 Create Room">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfl-pt-KQU">
+                                <rect key="frame" x="30" y="667" width="354" height="55"/>
+                                <color key="backgroundColor" red="0.050980392159999999" green="0.094117647060000004" blue="0.46274509800000002" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="eA3-Jf-9sS"/>
+                                </constraints>
+                                <state key="normal" title="📣  Explore Rooms">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Grr-GX-xFw">
+                                <rect key="frame" x="30" y="782" width="354" height="50"/>
+                                <color key="backgroundColor" red="0.12549019610000001" green="0.1333333333" blue="0.19215686269999999" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="bub-n0-Qmr"/>
+                                </constraints>
+                                <state key="normal" title="Enter Room Code      🏠">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qHi-Mm-Nrc"/>
+                        <color key="backgroundColor" name="AccentColor"/>
+                        <constraints>
+                            <constraint firstItem="1Zs-nx-gqt" firstAttribute="top" secondItem="qHi-Mm-Nrc" secondAttribute="top" constant="50" id="0nf-Qz-LGa"/>
+                            <constraint firstItem="wfl-pt-KQU" firstAttribute="top" secondItem="9oZ-wT-zi2" secondAttribute="bottom" constant="30" id="2g4-2F-cSc"/>
+                            <constraint firstItem="6YL-4w-VqY" firstAttribute="top" secondItem="SfD-bx-WUb" secondAttribute="bottom" constant="43.5" id="46J-XF-5aH"/>
+                            <constraint firstItem="mcU-3g-KkR" firstAttribute="top" secondItem="SfD-bx-WUb" secondAttribute="bottom" constant="56.5" id="7q4-76-3oA"/>
+                            <constraint firstItem="SfD-bx-WUb" firstAttribute="leading" secondItem="qHi-Mm-Nrc" secondAttribute="leading" constant="25" id="HWg-2e-qjd"/>
+                            <constraint firstItem="qHi-Mm-Nrc" firstAttribute="trailing" secondItem="Grr-GX-xFw" secondAttribute="trailing" constant="30" id="Jwp-wt-quz"/>
+                            <constraint firstItem="Zjr-E0-vFG" firstAttribute="top" secondItem="qHi-Mm-Nrc" secondAttribute="top" constant="50" id="KeH-Gb-rDk"/>
+                            <constraint firstItem="SfD-bx-WUb" firstAttribute="top" secondItem="qHi-Mm-Nrc" secondAttribute="top" constant="40" id="LDW-52-jkT"/>
+                            <constraint firstItem="LY1-cM-GnY" firstAttribute="leading" secondItem="ry2-pa-qVE" secondAttribute="trailing" constant="60" id="Lnq-re-aSd"/>
+                            <constraint firstItem="qHi-Mm-Nrc" firstAttribute="trailing" secondItem="wfl-pt-KQU" secondAttribute="trailing" constant="30" id="M7H-3t-s6O"/>
+                            <constraint firstItem="mcU-3g-KkR" firstAttribute="leading" secondItem="qHi-Mm-Nrc" secondAttribute="leading" constant="132" id="NLn-Vb-2SS"/>
+                            <constraint firstItem="ry2-pa-qVE" firstAttribute="top" secondItem="MTe-5L-yy4" secondAttribute="bottom" constant="15" id="QAp-nQ-rRp"/>
+                            <constraint firstItem="6YL-4w-VqY" firstAttribute="leading" secondItem="qHi-Mm-Nrc" secondAttribute="leading" constant="119" id="Rtq-F1-0Yn"/>
+                            <constraint firstItem="Grr-GX-xFw" firstAttribute="top" secondItem="wfl-pt-KQU" secondAttribute="bottom" constant="60" id="V9e-Gt-vBp"/>
+                            <constraint firstItem="ry2-pa-qVE" firstAttribute="leading" secondItem="qHi-Mm-Nrc" secondAttribute="leading" constant="135" id="XVO-Bv-BtO"/>
+                            <constraint firstItem="MTe-5L-yy4" firstAttribute="top" secondItem="SfD-bx-WUb" secondAttribute="bottom" constant="25" id="ZDd-kb-01S"/>
+                            <constraint firstItem="9oZ-wT-zi2" firstAttribute="leading" secondItem="qHi-Mm-Nrc" secondAttribute="leading" constant="30" id="ZbH-RD-nde"/>
+                            <constraint firstItem="Grr-GX-xFw" firstAttribute="leading" secondItem="qHi-Mm-Nrc" secondAttribute="leading" constant="30" id="bK1-LE-6pt"/>
+                            <constraint firstItem="Zjr-E0-vFG" firstAttribute="leading" secondItem="1Zs-nx-gqt" secondAttribute="trailing" constant="35" id="bgA-qi-1w8"/>
+                            <constraint firstItem="qHi-Mm-Nrc" firstAttribute="trailing" secondItem="9oZ-wT-zi2" secondAttribute="trailing" constant="30" id="hYP-HT-nHW"/>
+                            <constraint firstItem="MTe-5L-yy4" firstAttribute="leading" secondItem="qHi-Mm-Nrc" secondAttribute="leading" constant="100" id="lzc-eS-FBW"/>
+                            <constraint firstItem="qHi-Mm-Nrc" firstAttribute="trailing" secondItem="Zjr-E0-vFG" secondAttribute="trailing" constant="35" id="nQH-HK-zfh"/>
+                            <constraint firstItem="qHi-Mm-Nrc" firstAttribute="bottom" secondItem="Grr-GX-xFw" secondAttribute="bottom" constant="30" id="pgF-sA-7Xq"/>
+                            <constraint firstItem="wfl-pt-KQU" firstAttribute="leading" secondItem="qHi-Mm-Nrc" secondAttribute="leading" constant="30" id="sAP-H7-nEn"/>
+                            <constraint firstItem="LY1-cM-GnY" firstAttribute="top" secondItem="MTe-5L-yy4" secondAttribute="bottom" constant="18" id="wgF-27-Iu0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="abx-Hn-FnG"/>
+                    <connections>
+                        <outlet property="appNameLabel" destination="SfD-bx-WUb" id="Oq8-XR-lfF"/>
+                        <outlet property="avatarImage" destination="mcU-3g-KkR" id="r1E-hk-I87"/>
+                        <outlet property="createRoomButton" destination="9oZ-wT-zi2" id="E9a-2Z-c4z"/>
+                        <outlet property="editNameButton" destination="LY1-cM-GnY" id="9rd-UU-oD6"/>
+                        <outlet property="enterCodeButton" destination="Grr-GX-xFw" id="ENJ-Fv-eVj"/>
+                        <outlet property="exploreRoomsButton" destination="wfl-pt-KQU" id="4cb-Nc-NSt"/>
+                        <outlet property="innerBoundImage" destination="6YL-4w-VqY" id="C5L-uE-OcE"/>
+                        <outlet property="outerBoundImage" destination="MTe-5L-yy4" id="KOP-AQ-6HU"/>
+                        <outlet property="scheduleButton" destination="1Zs-nx-gqt" id="FkE-mt-3Vg"/>
+                        <outlet property="settingsButton" destination="Zjr-E0-vFG" id="9ks-sq-0Jq"/>
+                        <outlet property="userNameLabel" destination="ry2-pa-qVE" id="9Et-zu-k3Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GaZ-P3-GLX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748" y="747"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Iuy-4O-xwH">
@@ -104,7 +244,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Ellipse 1" width="164" height="164"/>
+        <image name="Ellipse 2" width="200" height="200"/>
+        <image name="ant-design_edit-outlined" width="25" height="25"/>
+        <image name="calender" width="21" height="24"/>
         <image name="converse-icon" width="60" height="60"/>
+        <image name="setting" width="25" height="25"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.0" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
