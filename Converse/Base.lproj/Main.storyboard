@@ -52,6 +52,9 @@
                                 <state key="normal" title="Start Conversation 🗣️ ">
                                     <color key="titleColor" name="AccentColor"/>
                                 </state>
+                                <connections>
+                                    <segue destination="oWP-j5-ljx" kind="show" id="YJY-VX-y3w"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -78,7 +81,6 @@
                         <outlet property="iconImage" destination="rQb-Kz-Jii" id="OhY-cN-VCI"/>
                         <outlet property="noteLabel" destination="o8a-cw-fgu" id="u4M-BF-z6f"/>
                         <outlet property="startConvoButton" destination="p6h-Hq-QFs" id="QdK-r6-eVW"/>
-                        <segue destination="oWP-j5-ljx" kind="show" id="wvy-4Y-l6c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -110,6 +112,9 @@
                                 <state key="normal" image="setting">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="EXm-nC-CzB" kind="show" id="83b-mV-NvZ"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ry2-pa-qVE">
                                 <rect key="frame" x="135" y="421.5" width="59" height="26.5"/>
@@ -222,7 +227,135 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GaZ-P3-GLX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="748" y="747"/>
+            <point key="canvasLocation" x="748" y="771"/>
+        </scene>
+        <!--SettingsViewController-->
+        <scene sceneID="FFE-Vp-08Z">
+            <objects>
+                <viewController title="SettingsViewController" id="EXm-nC-CzB" customClass="SettingsViewController" customModule="Converse" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a3I-Uc-rD9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CtS-gK-xmm">
+                                <rect key="frame" x="25" y="128" width="150" height="53.5"/>
+                                <fontDescription key="fontDescription" name="NotoSansOriya-Bold" family="Noto Sans Oriya" pointSize="38"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CtN-zi-I0l">
+                                <rect key="frame" x="30" y="221.5" width="354" height="61"/>
+                                <color key="backgroundColor" red="0.75294117650000003" green="0.81960784310000001" blue="0.92549019610000005" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="L0z-Pr-VfX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title=" Connect account" image="apple">
+                                    <color key="titleColor" name="AccentColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCK-yD-P7M">
+                                <rect key="frame" x="30" y="312.5" width="354" height="61"/>
+                                <color key="backgroundColor" red="0.75294117650000003" green="0.81960784310000001" blue="0.92549019610000005" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="xC0-wk-1Eb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title=" Connect account" image="google">
+                                    <color key="titleColor" name="AccentColor"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cC9-ws-vXh">
+                                <rect key="frame" x="30" y="403.5" width="354" height="54"/>
+                                <string key="text">Hosts are encourage to connect an account to save
+scheduled rooms. Verified mark will be given to host accounts with more discussions created.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.75294117650000003" green="0.81960784310000001" blue="0.92549019610000005" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZ8-gn-qav">
+                                <rect key="frame" x="25" y="522.5" width="107" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Turn off for silent notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OdR-sa-GgD">
+                                <rect key="frame" x="25" y="555.5" width="195" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hRi-Pr-p0H">
+                                <rect key="frame" x="305" y="532.5" width="49" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="9Pj-gt-xvC"/>
+                                    <constraint firstAttribute="width" constant="47" id="hKQ-sh-EUY"/>
+                                </constraints>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Made by Students for Students 🎓" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XKL-FJ-sjv">
+                                <rect key="frame" x="53" y="789" width="292" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy Policy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1yf-Wy-WhN">
+                                <rect key="frame" x="30" y="622.5" width="117" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms of Service" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KTD-14-SOf">
+                                <rect key="frame" x="30" y="665.5" width="142" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="siK-08-VbP"/>
+                        <color key="backgroundColor" name="AccentColor"/>
+                        <constraints>
+                            <constraint firstItem="JZ8-gn-qav" firstAttribute="leading" secondItem="siK-08-VbP" secondAttribute="leading" constant="25" id="4pB-Ig-yOZ"/>
+                            <constraint firstItem="JZ8-gn-qav" firstAttribute="top" secondItem="cC9-ws-vXh" secondAttribute="bottom" constant="65" id="7pS-3a-9iL"/>
+                            <constraint firstItem="siK-08-VbP" firstAttribute="bottom" secondItem="XKL-FJ-sjv" secondAttribute="bottom" constant="50" id="Ctf-uc-eFl"/>
+                            <constraint firstItem="CtS-gK-xmm" firstAttribute="top" secondItem="siK-08-VbP" secondAttribute="top" constant="40" id="Dxw-gh-X2f"/>
+                            <constraint firstItem="hRi-Pr-p0H" firstAttribute="top" secondItem="cC9-ws-vXh" secondAttribute="bottom" constant="75" id="G9r-Ah-2hW"/>
+                            <constraint firstItem="lCK-yD-P7M" firstAttribute="top" secondItem="CtN-zi-I0l" secondAttribute="bottom" constant="30" id="GJq-54-o4s"/>
+                            <constraint firstItem="CtN-zi-I0l" firstAttribute="top" secondItem="CtS-gK-xmm" secondAttribute="bottom" constant="40" id="IiJ-i2-1K7"/>
+                            <constraint firstItem="siK-08-VbP" firstAttribute="trailing" secondItem="lCK-yD-P7M" secondAttribute="trailing" constant="30" id="M0W-0B-6iZ"/>
+                            <constraint firstItem="hRi-Pr-p0H" firstAttribute="leading" secondItem="OdR-sa-GgD" secondAttribute="trailing" constant="85" id="PaT-fg-AIP"/>
+                            <constraint firstItem="XKL-FJ-sjv" firstAttribute="leading" secondItem="siK-08-VbP" secondAttribute="leading" constant="53" id="PtY-Pb-WTD"/>
+                            <constraint firstItem="lCK-yD-P7M" firstAttribute="leading" secondItem="siK-08-VbP" secondAttribute="leading" constant="30" id="Q1i-yl-tJp"/>
+                            <constraint firstItem="KTD-14-SOf" firstAttribute="leading" secondItem="siK-08-VbP" secondAttribute="leading" constant="30" id="Qoo-fE-88A"/>
+                            <constraint firstItem="OdR-sa-GgD" firstAttribute="top" secondItem="JZ8-gn-qav" secondAttribute="bottom" constant="10" id="Sar-t4-Ap4"/>
+                            <constraint firstItem="cC9-ws-vXh" firstAttribute="leading" secondItem="siK-08-VbP" secondAttribute="leading" constant="30" id="Wdp-Sn-iPr"/>
+                            <constraint firstItem="siK-08-VbP" firstAttribute="trailing" secondItem="cC9-ws-vXh" secondAttribute="trailing" constant="30" id="XIx-r0-tXe"/>
+                            <constraint firstItem="siK-08-VbP" firstAttribute="trailing" secondItem="CtN-zi-I0l" secondAttribute="trailing" constant="30" id="YCg-KC-tWa"/>
+                            <constraint firstItem="CtN-zi-I0l" firstAttribute="leading" secondItem="siK-08-VbP" secondAttribute="leading" constant="30" id="YQJ-ni-ASH"/>
+                            <constraint firstItem="1yf-Wy-WhN" firstAttribute="leading" secondItem="siK-08-VbP" secondAttribute="leading" constant="30" id="aBC-pP-OZE"/>
+                            <constraint firstItem="OdR-sa-GgD" firstAttribute="leading" secondItem="siK-08-VbP" secondAttribute="leading" constant="25" id="hiN-hD-nKr"/>
+                            <constraint firstItem="CtS-gK-xmm" firstAttribute="leading" secondItem="siK-08-VbP" secondAttribute="leading" constant="25" id="l4K-Rn-6Bg"/>
+                            <constraint firstItem="1yf-Wy-WhN" firstAttribute="top" secondItem="OdR-sa-GgD" secondAttribute="bottom" constant="50" id="nYg-vt-giA"/>
+                            <constraint firstItem="cC9-ws-vXh" firstAttribute="top" secondItem="lCK-yD-P7M" secondAttribute="bottom" constant="30" id="rHa-VC-xbR"/>
+                            <constraint firstItem="KTD-14-SOf" firstAttribute="top" secondItem="1yf-Wy-WhN" secondAttribute="bottom" constant="20" id="wkh-cR-B0r"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Settings" id="3vm-ur-3JU"/>
+                    <connections>
+                        <outlet property="appleConnectButton" destination="CtN-zi-I0l" id="eak-0a-ZPW"/>
+                        <outlet property="converseNoteLabel" destination="XKL-FJ-sjv" id="TQ0-nY-BGv"/>
+                        <outlet property="googleConnectButton" destination="lCK-yD-P7M" id="EpL-of-bYr"/>
+                        <outlet property="noteLabel" destination="cC9-ws-vXh" id="Rkf-YI-B4i"/>
+                        <outlet property="notificationSwitch" destination="hRi-Pr-p0H" id="bTv-Ut-Y7A"/>
+                        <outlet property="notificationsLabel" destination="JZ8-gn-qav" id="Lpy-Sn-pJf"/>
+                        <outlet property="privacyPolicyLabel" destination="1yf-Wy-WhN" id="KAg-9s-YYi"/>
+                        <outlet property="settingsLabel" destination="CtS-gK-xmm" id="SRU-fN-cM3"/>
+                        <outlet property="termsOfServiceLabel" destination="KTD-14-SOf" id="6cL-un-CEn"/>
+                        <outlet property="turnOffSilentLabel" destination="OdR-sa-GgD" id="WbP-uE-gvp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sps-KW-w9x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1443" y="771"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Iuy-4O-xwH">
@@ -247,8 +380,10 @@
         <image name="Ellipse 1" width="164" height="164"/>
         <image name="Ellipse 2" width="200" height="200"/>
         <image name="ant-design_edit-outlined" width="25" height="25"/>
+        <image name="apple" width="18" height="21"/>
         <image name="calender" width="21" height="24"/>
         <image name="converse-icon" width="60" height="60"/>
+        <image name="google" width="23" height="23"/>
         <image name="setting" width="25" height="25"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.0" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
