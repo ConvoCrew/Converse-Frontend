@@ -393,17 +393,549 @@
             </objects>
             <point key="canvasLocation" x="748" y="1450"/>
         </scene>
-        <!--Categories-->
+        <!--Study Material View Controller-->
+        <scene sceneID="2xz-Oa-la0">
+            <objects>
+                <viewController id="Czl-mA-hdU" customClass="StudyMaterialViewController" customModule="Converse" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7dh-uA-7n7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Study Material" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ljg-wx-32s">
+                                <rect key="frame" x="20" y="20" width="266" height="53.5"/>
+                                <fontDescription key="fontDescription" name="NotoSansOriya-Bold" family="Noto Sans Oriya" pointSize="38"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Em6-zY-wEP">
+                                <rect key="frame" x="20" y="83.5" width="374" height="470"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6g-Rf-4lu">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.12549019610000001" green="0.1333333333" blue="0.19215686269999999" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Bj4-NF-dxo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="Select a Category">
+                                            <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="selectButtonPressed:" destination="Czl-mA-hdU" eventType="touchUpInside" id="rwd-Hv-jqx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2xu-WB-DBr">
+                                        <rect key="frame" x="0.0" y="60" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.20784313730000001" green="0.48627450979999998" blue="0.91372549020000005" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="f5N-GV-uZP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="Mathematics">
+                                            <color key="titleColor" name="AccentColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="optionButtonPressed:" destination="Czl-mA-hdU" eventType="touchUpInside" id="1Pj-yq-Vdy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNS-YW-yL2">
+                                        <rect key="frame" x="0.0" y="120" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.20784313730000001" green="0.48627450979999998" blue="0.91372549020000005" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="MJ3-GE-4z2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="Science">
+                                            <color key="titleColor" name="AccentColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="optionButtonPressed:" destination="Czl-mA-hdU" eventType="touchUpInside" id="CEG-fY-cAr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6a2-f8-DVK">
+                                        <rect key="frame" x="0.0" y="180" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.20784313730000001" green="0.48627450979999998" blue="0.91372549020000005" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Lte-9m-bHg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="Instrumental Music – specific instrument">
+                                            <color key="titleColor" name="AccentColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="optionButtonPressed:" destination="Czl-mA-hdU" eventType="touchUpInside" id="nLY-ni-dBS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Okt-qk-yO1">
+                                        <rect key="frame" x="0.0" y="240" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.20784313730000001" green="0.48627450979999998" blue="0.91372549020000005" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="3It-r7-hj5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="Spanish or other foreign language">
+                                            <color key="titleColor" name="AccentColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="optionButtonPressed:" destination="Czl-mA-hdU" eventType="touchUpInside" id="reD-JH-lXG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jvV-cb-fup">
+                                        <rect key="frame" x="0.0" y="300" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.20784313730000001" green="0.48627450979999998" blue="0.91372549020000005" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="tFA-Xg-jrR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="Special Education Day Class">
+                                            <color key="titleColor" name="AccentColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="optionButtonPressed:" destination="Czl-mA-hdU" eventType="touchUpInside" id="eVT-vl-exX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Gs-fG-EE2">
+                                        <rect key="frame" x="0.0" y="360" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.20784313730000001" green="0.48627450979999998" blue="0.91372549020000005" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="1lB-3U-wMI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="Adaptive P.E.">
+                                            <color key="titleColor" name="AccentColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="optionButtonPressed:" destination="Czl-mA-hdU" eventType="touchUpInside" id="cuU-PG-jmI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ylf-vx-UPV">
+                                        <rect key="frame" x="0.0" y="420" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.20784313730000001" green="0.48627450979999998" blue="0.91372549020000005" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="k21-Nh-d4j"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="Occupational Therapy">
+                                            <color key="titleColor" name="AccentColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="optionButtonPressed:" destination="Czl-mA-hdU" eventType="touchUpInside" id="okd-LO-GiJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Okt-qk-yO1" secondAttribute="trailing" id="1OZ-eU-lYT"/>
+                                    <constraint firstItem="Okt-qk-yO1" firstAttribute="leading" secondItem="Em6-zY-wEP" secondAttribute="leading" id="1my-1c-r11"/>
+                                    <constraint firstAttribute="trailing" secondItem="2xu-WB-DBr" secondAttribute="trailing" id="28o-6y-pf3"/>
+                                    <constraint firstAttribute="trailing" secondItem="FNS-YW-yL2" secondAttribute="trailing" id="9Bd-2M-fSc"/>
+                                    <constraint firstItem="e6g-Rf-4lu" firstAttribute="leading" secondItem="Em6-zY-wEP" secondAttribute="leading" id="Dqk-bo-e7k"/>
+                                    <constraint firstItem="FNS-YW-yL2" firstAttribute="leading" secondItem="Em6-zY-wEP" secondAttribute="leading" id="LGx-f7-mGX"/>
+                                    <constraint firstAttribute="trailing" secondItem="1Gs-fG-EE2" secondAttribute="trailing" id="OcS-KH-Tdd"/>
+                                    <constraint firstItem="6a2-f8-DVK" firstAttribute="leading" secondItem="Em6-zY-wEP" secondAttribute="leading" id="Ze0-p5-KJH"/>
+                                    <constraint firstAttribute="trailing" secondItem="6a2-f8-DVK" secondAttribute="trailing" id="a42-Pq-bvW"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ylf-vx-UPV" secondAttribute="trailing" id="aqb-Le-0ms"/>
+                                    <constraint firstItem="2xu-WB-DBr" firstAttribute="leading" secondItem="Em6-zY-wEP" secondAttribute="leading" id="ddD-eG-ENX"/>
+                                    <constraint firstItem="Ylf-vx-UPV" firstAttribute="leading" secondItem="Em6-zY-wEP" secondAttribute="leading" id="g4H-jr-7Gm"/>
+                                    <constraint firstItem="1Gs-fG-EE2" firstAttribute="leading" secondItem="Em6-zY-wEP" secondAttribute="leading" id="iY3-zX-lA7"/>
+                                    <constraint firstAttribute="trailing" secondItem="e6g-Rf-4lu" secondAttribute="trailing" id="v5s-4k-Zgt"/>
+                                    <constraint firstItem="jvV-cb-fup" firstAttribute="leading" secondItem="Em6-zY-wEP" secondAttribute="leading" id="yJB-Ue-xru"/>
+                                    <constraint firstAttribute="trailing" secondItem="jvV-cb-fup" secondAttribute="trailing" id="z8a-XI-TlO"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HuU-9E-CEF"/>
+                        <color key="backgroundColor" red="0.12549019610000001" green="0.1333333333" blue="0.19215686269999999" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ljg-wx-32s" firstAttribute="top" secondItem="HuU-9E-CEF" secondAttribute="top" constant="20" id="14W-Dx-pgp"/>
+                            <constraint firstItem="Em6-zY-wEP" firstAttribute="leading" secondItem="HuU-9E-CEF" secondAttribute="leading" constant="20" id="PHA-S4-zfu"/>
+                            <constraint firstItem="HuU-9E-CEF" firstAttribute="trailing" secondItem="Em6-zY-wEP" secondAttribute="trailing" constant="20" id="a8F-M2-gNe"/>
+                            <constraint firstItem="Em6-zY-wEP" firstAttribute="top" secondItem="Ljg-wx-32s" secondAttribute="bottom" constant="10" id="ga0-y2-A3W"/>
+                            <constraint firstItem="Ljg-wx-32s" firstAttribute="leading" secondItem="HuU-9E-CEF" secondAttribute="leading" constant="20" id="nyd-xl-5iX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="selectTopicButton" destination="e6g-Rf-4lu" id="Flv-gx-PW5"/>
+                        <outletCollection property="optionsButton" destination="2xu-WB-DBr" collectionClass="NSMutableArray" id="aDq-GJ-ek8"/>
+                        <outletCollection property="optionsButton" destination="FNS-YW-yL2" collectionClass="NSMutableArray" id="Uih-Ak-rBF"/>
+                        <outletCollection property="optionsButton" destination="6a2-f8-DVK" collectionClass="NSMutableArray" id="WFN-Yc-0xT"/>
+                        <outletCollection property="optionsButton" destination="Okt-qk-yO1" collectionClass="NSMutableArray" id="YVq-Rj-74P"/>
+                        <outletCollection property="optionsButton" destination="jvV-cb-fup" collectionClass="NSMutableArray" id="QNL-WT-bP0"/>
+                        <outletCollection property="optionsButton" destination="1Gs-fG-EE2" collectionClass="NSMutableArray" id="1bb-4l-2nr"/>
+                        <outletCollection property="optionsButton" destination="Ylf-vx-UPV" collectionClass="NSMutableArray" id="1dZ-4b-1yd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LM2-hx-RLm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-890" y="2908"/>
+        </scene>
+        <!--Debate View Controller-->
+        <scene sceneID="ITG-LL-Qhd">
+            <objects>
+                <viewController id="n7o-d3-12d" customClass="DebateViewController" customModule="Converse" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rrM-fR-DZ3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Debate Topics" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nk5-2y-ZZ0">
+                                <rect key="frame" x="20" y="20" width="263" height="53.5"/>
+                                <fontDescription key="fontDescription" name="NotoSansOriya-Bold" family="Noto Sans Oriya" pointSize="38"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="02u-07-Lop">
+                                <rect key="frame" x="20" y="83.5" width="374" height="350"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oC3-AH-0F4">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.12549019610000001" green="0.1333333333" blue="0.19215686269999999" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="4iG-bV-a8m"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="Select Debate Topic">
+                                            <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="selectOptionPressed:" destination="n7o-d3-12d" eventType="touchUpInside" id="HkN-bP-oKs"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jmS-Pl-fbx">
+                                        <rect key="frame" x="0.0" y="60" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.20784313730000001" green="0.48627450979999998" blue="0.91372549020000005" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="fVg-IC-H0Q"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="Public Forum">
+                                            <color key="titleColor" name="AccentColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="optionPressed:" destination="n7o-d3-12d" eventType="touchUpInside" id="wVI-XY-yVj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBj-VN-n5l">
+                                        <rect key="frame" x="0.0" y="120" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.20784313730000001" green="0.48627450979999998" blue="0.91372549020000005" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="00C-Aw-3b3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="Policy Debate">
+                                            <color key="titleColor" name="AccentColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="optionPressed:" destination="n7o-d3-12d" eventType="touchUpInside" id="g6K-Tv-gch"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SC8-6v-Zeg">
+                                        <rect key="frame" x="0.0" y="180" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.20784313730000001" green="0.48627450979999998" blue="0.91372549020000005" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="WQ3-7Q-QeH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="General Debate">
+                                            <color key="titleColor" name="AccentColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="optionPressed:" destination="n7o-d3-12d" eventType="touchUpInside" id="qof-7n-PxE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ky0-td-JmP">
+                                        <rect key="frame" x="0.0" y="240" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.20784313730000001" green="0.48627450979999998" blue="0.91372549020000005" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="57a-Or-tzx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="Congressional Debate">
+                                            <color key="titleColor" name="AccentColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="optionPressed:" destination="n7o-d3-12d" eventType="touchUpInside" id="fQF-GW-NIw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nr3-iY-Gnz">
+                                        <rect key="frame" x="0.0" y="300" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.20784313730000001" green="0.48627450979999998" blue="0.91372549020000005" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="okJ-Wg-8ME"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="Lincoln-Douglas Debate">
+                                            <color key="titleColor" name="AccentColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="optionPressed:" destination="n7o-d3-12d" eventType="touchUpInside" id="thF-Gi-8ji"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="FBj-VN-n5l" secondAttribute="trailing" id="3CZ-B7-Q2N"/>
+                                    <constraint firstItem="nr3-iY-Gnz" firstAttribute="leading" secondItem="02u-07-Lop" secondAttribute="leading" id="BGJ-Aj-z5n"/>
+                                    <constraint firstAttribute="trailing" secondItem="nr3-iY-Gnz" secondAttribute="trailing" id="IIc-nA-KzI"/>
+                                    <constraint firstItem="jmS-Pl-fbx" firstAttribute="leading" secondItem="02u-07-Lop" secondAttribute="leading" id="IqR-se-IqZ"/>
+                                    <constraint firstItem="oC3-AH-0F4" firstAttribute="leading" secondItem="02u-07-Lop" secondAttribute="leading" id="LNf-la-crh"/>
+                                    <constraint firstAttribute="trailing" secondItem="oC3-AH-0F4" secondAttribute="trailing" id="TPV-w8-bsX"/>
+                                    <constraint firstItem="FBj-VN-n5l" firstAttribute="leading" secondItem="02u-07-Lop" secondAttribute="leading" id="ZRE-3F-Ke3"/>
+                                    <constraint firstItem="ky0-td-JmP" firstAttribute="leading" secondItem="02u-07-Lop" secondAttribute="leading" id="kBJ-Du-XtS"/>
+                                    <constraint firstItem="SC8-6v-Zeg" firstAttribute="leading" secondItem="02u-07-Lop" secondAttribute="leading" id="qnE-9s-E4u"/>
+                                    <constraint firstAttribute="trailing" secondItem="jmS-Pl-fbx" secondAttribute="trailing" id="rqs-Vq-maB"/>
+                                    <constraint firstAttribute="trailing" secondItem="SC8-6v-Zeg" secondAttribute="trailing" id="uQ2-64-Hap"/>
+                                    <constraint firstAttribute="trailing" secondItem="ky0-td-JmP" secondAttribute="trailing" id="wac-55-3Ua"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZLq-IF-IFl"/>
+                        <color key="backgroundColor" red="0.12549019610000001" green="0.1333333333" blue="0.19215686269999999" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="02u-07-Lop" firstAttribute="leading" secondItem="ZLq-IF-IFl" secondAttribute="leading" constant="20" id="BRo-XU-IGY"/>
+                            <constraint firstItem="ZLq-IF-IFl" firstAttribute="trailing" secondItem="02u-07-Lop" secondAttribute="trailing" constant="20" id="D3c-mu-fuq"/>
+                            <constraint firstItem="Nk5-2y-ZZ0" firstAttribute="top" secondItem="ZLq-IF-IFl" secondAttribute="top" constant="20" id="Jnl-Rj-vtD"/>
+                            <constraint firstItem="02u-07-Lop" firstAttribute="top" secondItem="Nk5-2y-ZZ0" secondAttribute="bottom" constant="10" id="gWh-TP-Lgf"/>
+                            <constraint firstItem="Nk5-2y-ZZ0" firstAttribute="leading" secondItem="ZLq-IF-IFl" secondAttribute="leading" constant="20" id="qvn-o0-8dI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="selectTopicButton" destination="oC3-AH-0F4" id="u3i-f2-4oc"/>
+                        <outletCollection property="optionButton" destination="jmS-Pl-fbx" collectionClass="NSMutableArray" id="Npn-hB-n0a"/>
+                        <outletCollection property="optionButton" destination="FBj-VN-n5l" collectionClass="NSMutableArray" id="O5X-3s-xMM"/>
+                        <outletCollection property="optionButton" destination="SC8-6v-Zeg" collectionClass="NSMutableArray" id="ys7-SI-f8O"/>
+                        <outletCollection property="optionButton" destination="ky0-td-JmP" collectionClass="NSMutableArray" id="pqS-YR-vSM"/>
+                        <outletCollection property="optionButton" destination="nr3-iY-Gnz" collectionClass="NSMutableArray" id="jxr-H3-754"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zVQ-xq-inV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-241" y="2908"/>
+        </scene>
+        <!--Quiz View Controller-->
+        <scene sceneID="YqJ-sG-26X">
+            <objects>
+                <viewController id="T3t-vy-9jK" customClass="QuizViewController" customModule="Converse" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ei9-pl-m1X">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Cbt-oB-BMQ">
+                                <rect key="frame" x="20" y="83.5" width="374" height="350"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yPp-jc-3bf">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.12549019610000001" green="0.1333333333" blue="0.19215686269999999" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="oi1-gv-hdd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="Select Quiz Topic">
+                                            <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="selectButtonPressed:" destination="T3t-vy-9jK" eventType="touchUpInside" id="6PD-05-2Ol"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lDv-95-F7V">
+                                        <rect key="frame" x="0.0" y="60" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.20784313730000001" green="0.48627450979999998" blue="0.91372549020000005" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="ncl-DZ-zbI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="General Knowledge">
+                                            <color key="titleColor" name="AccentColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="optionPressed:" destination="T3t-vy-9jK" eventType="touchUpInside" id="TFq-KB-OIS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="14A-PZ-sag">
+                                        <rect key="frame" x="0.0" y="120" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.20784313730000001" green="0.48627450979999998" blue="0.91372549020000005" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="y36-yM-fxt"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="Art &amp; Literature">
+                                            <color key="titleColor" name="AccentColor"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S6U-fh-afn">
+                                        <rect key="frame" x="0.0" y="180" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.20784313730000001" green="0.48627450979999998" blue="0.91372549020000005" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="FNZ-1V-Jnh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="Music Trivia">
+                                            <color key="titleColor" name="AccentColor"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNd-0F-iRo">
+                                        <rect key="frame" x="0.0" y="240" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.20784313730000001" green="0.48627450979999998" blue="0.91372549020000005" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="9J6-Fj-jjF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="History">
+                                            <color key="titleColor" name="AccentColor"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yh9-4x-cQp">
+                                        <rect key="frame" x="0.0" y="300" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.20784313730000001" green="0.48627450979999998" blue="0.91372549020000005" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="z7f-kN-5Jn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="Politics">
+                                            <color key="titleColor" name="AccentColor"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="yPp-jc-3bf" secondAttribute="trailing" id="2Q3-Hl-O8j"/>
+                                    <constraint firstItem="S6U-fh-afn" firstAttribute="leading" secondItem="Cbt-oB-BMQ" secondAttribute="leading" id="8X0-o9-cFL"/>
+                                    <constraint firstAttribute="trailing" secondItem="14A-PZ-sag" secondAttribute="trailing" id="Fe3-Tp-YTk"/>
+                                    <constraint firstAttribute="trailing" secondItem="S6U-fh-afn" secondAttribute="trailing" id="K6E-uV-PRp"/>
+                                    <constraint firstAttribute="trailing" secondItem="lDv-95-F7V" secondAttribute="trailing" id="OxQ-uA-XAw"/>
+                                    <constraint firstItem="yPp-jc-3bf" firstAttribute="leading" secondItem="Cbt-oB-BMQ" secondAttribute="leading" id="Q1s-Pz-2Tc"/>
+                                    <constraint firstItem="lDv-95-F7V" firstAttribute="leading" secondItem="Cbt-oB-BMQ" secondAttribute="leading" id="ZuJ-ki-D1k"/>
+                                    <constraint firstItem="RNd-0F-iRo" firstAttribute="leading" secondItem="Cbt-oB-BMQ" secondAttribute="leading" id="c0e-hV-sje"/>
+                                    <constraint firstItem="14A-PZ-sag" firstAttribute="leading" secondItem="Cbt-oB-BMQ" secondAttribute="leading" id="jPZ-qF-rgu"/>
+                                    <constraint firstItem="yh9-4x-cQp" firstAttribute="leading" secondItem="Cbt-oB-BMQ" secondAttribute="leading" id="nbu-CR-kNU"/>
+                                    <constraint firstAttribute="trailing" secondItem="yh9-4x-cQp" secondAttribute="trailing" id="scP-hz-dWJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="RNd-0F-iRo" secondAttribute="trailing" id="zjJ-aY-COG"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quiz Topics" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCz-DZ-5te">
+                                <rect key="frame" x="20" y="20" width="218.5" height="53.5"/>
+                                <fontDescription key="fontDescription" name="NotoSansOriya-Bold" family="Noto Sans Oriya" pointSize="38"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zdC-OC-ZEI"/>
+                        <color key="backgroundColor" red="0.12549019610000001" green="0.1333333333" blue="0.19215686269999999" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="iCz-DZ-5te" firstAttribute="top" secondItem="zdC-OC-ZEI" secondAttribute="top" constant="20" id="5BC-Gf-Yuk"/>
+                            <constraint firstItem="Cbt-oB-BMQ" firstAttribute="leading" secondItem="zdC-OC-ZEI" secondAttribute="leading" constant="20" id="NMu-jq-GWI"/>
+                            <constraint firstItem="Cbt-oB-BMQ" firstAttribute="top" secondItem="iCz-DZ-5te" secondAttribute="bottom" constant="10" id="W81-3X-8lR"/>
+                            <constraint firstItem="iCz-DZ-5te" firstAttribute="leading" secondItem="zdC-OC-ZEI" secondAttribute="leading" constant="20" id="dIj-XE-EyK"/>
+                            <constraint firstItem="zdC-OC-ZEI" firstAttribute="trailing" secondItem="Cbt-oB-BMQ" secondAttribute="trailing" constant="20" id="y0g-fB-fSs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="selectTopicButton" destination="yPp-jc-3bf" id="Qf9-lo-pld"/>
+                        <outletCollection property="optionButton" destination="lDv-95-F7V" collectionClass="NSMutableArray" id="S9T-DV-hbd"/>
+                        <outletCollection property="optionButton" destination="14A-PZ-sag" collectionClass="NSMutableArray" id="G6d-eF-g80"/>
+                        <outletCollection property="optionButton" destination="S6U-fh-afn" collectionClass="NSMutableArray" id="aFz-TD-afx"/>
+                        <outletCollection property="optionButton" destination="RNd-0F-iRo" collectionClass="NSMutableArray" id="qjf-tW-QEN"/>
+                        <outletCollection property="optionButton" destination="yh9-4x-cQp" collectionClass="NSMutableArray" id="zXd-JA-iqJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gmv-O1-O40" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="406" y="2908"/>
+        </scene>
+        <!--Category-->
         <scene sceneID="GRf-4P-Jx4">
             <objects>
-                <viewController id="CGT-nT-KVZ" sceneMemberID="viewController">
+                <viewController title="Category" id="CGT-nT-KVZ" customClass="CategoryViewController" customModule="Converse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ENh-fd-tO8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qDX-8g-SVQ">
+                                <rect key="frame" x="20" y="108" width="374" height="230"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDl-9f-cgd">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.12549019610000001" green="0.1333333333" blue="0.19215686269999999" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="nVN-ON-zox"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="Select Category">
+                                            <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="selectCategoryPressed:" destination="CGT-nT-KVZ" eventType="touchUpInside" id="mPb-Vh-8dJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Jm-We-Um7">
+                                        <rect key="frame" x="0.0" y="60" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.20784313730000001" green="0.48627450979999998" blue="0.91372549020000005" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="bEX-Yv-ytO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="Study Material">
+                                            <color key="titleColor" name="AccentColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="categoryOptionPressed:" destination="CGT-nT-KVZ" eventType="touchUpInside" id="BcG-Ig-IRr"/>
+                                            <segue destination="Czl-mA-hdU" kind="presentation" id="rYI-cQ-lYK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y8C-xX-QAf">
+                                        <rect key="frame" x="0.0" y="120" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.20784313730000001" green="0.48627450979999998" blue="0.91372549020000005" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="i97-XJ-hib"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="Debate">
+                                            <color key="titleColor" name="AccentColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="categoryOptionPressed:" destination="CGT-nT-KVZ" eventType="touchUpInside" id="5cg-FI-n6T"/>
+                                            <segue destination="n7o-d3-12d" kind="presentation" id="99N-Lq-dLg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bR6-DN-q8o">
+                                        <rect key="frame" x="0.0" y="180" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.20784313730000001" green="0.48627450979999998" blue="0.91372549020000005" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="CIr-mz-rkZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="Quiz">
+                                            <color key="titleColor" name="AccentColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="categoryOptionPressed:" destination="CGT-nT-KVZ" eventType="touchUpInside" id="mqA-p6-uDu"/>
+                                            <segue destination="T3t-vy-9jK" kind="presentation" id="0bp-kp-dxM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="eDl-9f-cgd" firstAttribute="leading" secondItem="qDX-8g-SVQ" secondAttribute="leading" id="9xB-t7-GIc"/>
+                                    <constraint firstAttribute="trailing" secondItem="bR6-DN-q8o" secondAttribute="trailing" id="AtF-XJ-eI9"/>
+                                    <constraint firstAttribute="trailing" secondItem="Y8C-xX-QAf" secondAttribute="trailing" id="TN6-aX-59P"/>
+                                    <constraint firstItem="0Jm-We-Um7" firstAttribute="leading" secondItem="qDX-8g-SVQ" secondAttribute="leading" id="WH8-in-29K"/>
+                                    <constraint firstAttribute="trailing" secondItem="0Jm-We-Um7" secondAttribute="trailing" id="Yxh-Ku-4lk"/>
+                                    <constraint firstItem="bR6-DN-q8o" firstAttribute="leading" secondItem="qDX-8g-SVQ" secondAttribute="leading" id="kEZ-ou-0IA"/>
+                                    <constraint firstAttribute="trailing" secondItem="eDl-9f-cgd" secondAttribute="trailing" id="rIx-Hs-gvy"/>
+                                    <constraint firstItem="Y8C-xX-QAf" firstAttribute="leading" secondItem="qDX-8g-SVQ" secondAttribute="leading" id="roj-ec-4mS"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="OUB-RK-dNa"/>
                         <color key="backgroundColor" name="AccentColor"/>
+                        <constraints>
+                            <constraint firstItem="qDX-8g-SVQ" firstAttribute="top" secondItem="OUB-RK-dNa" secondAttribute="top" constant="20" id="Jgi-pr-HiN"/>
+                            <constraint firstItem="qDX-8g-SVQ" firstAttribute="leading" secondItem="OUB-RK-dNa" secondAttribute="leading" constant="20" id="dDH-pj-FOW"/>
+                            <constraint firstItem="OUB-RK-dNa" firstAttribute="trailing" secondItem="qDX-8g-SVQ" secondAttribute="trailing" constant="20" id="xEQ-DA-7Jd"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Categories" id="l0c-Wn-7hR"/>
+                    <connections>
+                        <outlet property="selectCategoryButton" destination="eDl-9f-cgd" id="0ug-8A-fIU"/>
+                        <outletCollection property="categoryOptionButton" destination="0Jm-We-Um7" collectionClass="NSMutableArray" id="dQA-xe-vga"/>
+                        <outletCollection property="categoryOptionButton" destination="Y8C-xX-QAf" collectionClass="NSMutableArray" id="8Vf-1j-72r"/>
+                        <outletCollection property="categoryOptionButton" destination="bR6-DN-q8o" collectionClass="NSMutableArray" id="8eF-pw-WBz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bw6-vb-xLq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -681,14 +1213,132 @@
         <!--No. of Participants-->
         <scene sceneID="gCb-Mi-KqN">
             <objects>
-                <viewController id="cSs-E3-reW" sceneMemberID="viewController">
+                <viewController id="cSs-E3-reW" customClass="NumOfParticipantsViewController" customModule="Converse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ROH-lV-xJa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="aPE-y4-aMj">
+                                <rect key="frame" x="20" y="108" width="374" height="350"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xH1-ig-0k3">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.12549019610000001" green="0.1333333333" blue="0.19215686269999999" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="M10-3t-PqZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="Select Number of Participants">
+                                            <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="selectButtonPressed:" destination="cSs-E3-reW" eventType="touchUpInside" id="7IW-Om-pWe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fMX-yS-0o7">
+                                        <rect key="frame" x="0.0" y="60" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.20784313730000001" green="0.48627450979999998" blue="0.91372549020000005" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="zzC-pL-BCr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="Individual">
+                                            <color key="titleColor" name="AccentColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="optionPressed:" destination="cSs-E3-reW" eventType="touchUpInside" id="BbY-ai-ag7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yz9-Cv-WVB">
+                                        <rect key="frame" x="0.0" y="120" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.20784313730000001" green="0.48627450979999998" blue="0.91372549020000005" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="jsi-DM-i4f"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="Group of 3">
+                                            <color key="titleColor" name="AccentColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="optionPressed:" destination="cSs-E3-reW" eventType="touchUpInside" id="8hy-9d-Tf5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cde-ey-erz">
+                                        <rect key="frame" x="0.0" y="180" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.20784313730000001" green="0.48627450979999998" blue="0.91372549020000005" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="uQl-AA-F04"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="Group of 4">
+                                            <color key="titleColor" name="AccentColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="optionPressed:" destination="cSs-E3-reW" eventType="touchUpInside" id="0Ad-qx-h8U"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beX-L5-4OV">
+                                        <rect key="frame" x="0.0" y="240" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.20784313730000001" green="0.48627450979999998" blue="0.91372549020000005" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="OWz-uv-Hli"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="Group of 5">
+                                            <color key="titleColor" name="AccentColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="optionPressed:" destination="cSs-E3-reW" eventType="touchUpInside" id="7x6-pQ-kVt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rQv-VH-0rH">
+                                        <rect key="frame" x="0.0" y="300" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.20784313730000001" green="0.48627450979999998" blue="0.91372549020000005" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="QcI-HE-Gwm"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <state key="normal" title="Group of 6">
+                                            <color key="titleColor" name="AccentColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="optionPressed:" destination="cSs-E3-reW" eventType="touchUpInside" id="f3e-7o-akZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Cde-ey-erz" secondAttribute="trailing" id="3Un-di-ZE7"/>
+                                    <constraint firstItem="beX-L5-4OV" firstAttribute="leading" secondItem="aPE-y4-aMj" secondAttribute="leading" id="8Ja-lE-CyR"/>
+                                    <constraint firstItem="Cde-ey-erz" firstAttribute="leading" secondItem="aPE-y4-aMj" secondAttribute="leading" id="BLB-UQ-WDf"/>
+                                    <constraint firstAttribute="trailing" secondItem="beX-L5-4OV" secondAttribute="trailing" id="Eu1-Bo-hCw"/>
+                                    <constraint firstAttribute="trailing" secondItem="xH1-ig-0k3" secondAttribute="trailing" id="eR6-D3-PFb"/>
+                                    <constraint firstAttribute="trailing" secondItem="Yz9-Cv-WVB" secondAttribute="trailing" id="fog-TX-uDq"/>
+                                    <constraint firstItem="Yz9-Cv-WVB" firstAttribute="leading" secondItem="aPE-y4-aMj" secondAttribute="leading" id="gX0-88-3Ez"/>
+                                    <constraint firstAttribute="trailing" secondItem="fMX-yS-0o7" secondAttribute="trailing" id="ifE-if-Pc3"/>
+                                    <constraint firstAttribute="trailing" secondItem="rQv-VH-0rH" secondAttribute="trailing" id="kR4-Kh-oKK"/>
+                                    <constraint firstItem="xH1-ig-0k3" firstAttribute="leading" secondItem="aPE-y4-aMj" secondAttribute="leading" id="pOx-Od-ORQ"/>
+                                    <constraint firstItem="fMX-yS-0o7" firstAttribute="leading" secondItem="aPE-y4-aMj" secondAttribute="leading" id="qUG-CD-pup"/>
+                                    <constraint firstItem="rQv-VH-0rH" firstAttribute="leading" secondItem="aPE-y4-aMj" secondAttribute="leading" id="ut7-Uu-BlO"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Baj-Pc-QGH"/>
                         <color key="backgroundColor" name="AccentColor"/>
+                        <constraints>
+                            <constraint firstItem="aPE-y4-aMj" firstAttribute="leading" secondItem="Baj-Pc-QGH" secondAttribute="leading" constant="20" id="Xlb-dr-EtO"/>
+                            <constraint firstItem="aPE-y4-aMj" firstAttribute="top" secondItem="Baj-Pc-QGH" secondAttribute="top" constant="20" id="kUK-G4-VST"/>
+                            <constraint firstItem="Baj-Pc-QGH" firstAttribute="trailing" secondItem="aPE-y4-aMj" secondAttribute="trailing" constant="20" id="kxR-nn-WMO"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="No. of Participants" id="gyO-1s-6yI"/>
+                    <connections>
+                        <outlet property="selectNumberButton" destination="xH1-ig-0k3" id="3Vd-qI-ym4"/>
+                        <outletCollection property="groupOptionButton" destination="fMX-yS-0o7" collectionClass="NSMutableArray" id="lHb-dA-Xui"/>
+                        <outletCollection property="groupOptionButton" destination="Yz9-Cv-WVB" collectionClass="NSMutableArray" id="kew-RN-cA4"/>
+                        <outletCollection property="groupOptionButton" destination="Cde-ey-erz" collectionClass="NSMutableArray" id="ZoO-Qj-W53"/>
+                        <outletCollection property="groupOptionButton" destination="beX-L5-4OV" collectionClass="NSMutableArray" id="Bwe-7b-crp"/>
+                        <outletCollection property="groupOptionButton" destination="rQv-VH-0rH" collectionClass="NSMutableArray" id="PaL-md-v0U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8dS-Gv-vXx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -972,7 +1622,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t36-kl-PXz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2290" y="-210"/>
+            <point key="canvasLocation" x="2290" y="-233"/>
         </scene>
         <!--Schedule-->
         <scene sceneID="Kra-DC-C5H">
