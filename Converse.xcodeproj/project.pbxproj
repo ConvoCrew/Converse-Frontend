@@ -18,6 +18,8 @@
 		63CE02D9260F42750046E93B /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CE02D8260F42750046E93B /* WelcomeViewController.swift */; };
 		63CE02DE260F4ACD0046E93B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CE02DD260F4ACD0046E93B /* HomeViewController.swift */; };
 		63CE02E3260F4F230046E93B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CE02E2260F4F230046E93B /* SettingsViewController.swift */; };
+		63CE02E8260F56550046E93B /* HostingScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CE02E7260F56550046E93B /* HostingScheduleViewController.swift */; };
+		63CE02ED260F56720046E93B /* AttendingScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CE02EC260F56720046E93B /* AttendingScheduleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		63CE02D8260F42750046E93B /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		63CE02DD260F4ACD0046E93B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		63CE02E2260F4F230046E93B /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		63CE02E7260F56550046E93B /* HostingScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingScheduleViewController.swift; sourceTree = "<group>"; };
+		63CE02EC260F56720046E93B /* AttendingScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendingScheduleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				63CE02A4260F35C80046E93B /* SceneDelegate.swift */,
 				63CE02A6260F35C80046E93B /* ViewController.swift */,
 				63CE02A8260F35C80046E93B /* Main.storyboard */,
+				63CE02EC260F56720046E93B /* AttendingScheduleViewController.swift */,
+				63CE02E7260F56550046E93B /* HostingScheduleViewController.swift */,
 				63CE02E2260F4F230046E93B /* SettingsViewController.swift */,
 				63CE02DD260F4ACD0046E93B /* HomeViewController.swift */,
 				63CE02D8260F42750046E93B /* WelcomeViewController.swift */,
@@ -269,10 +275,12 @@
 			files = (
 				63CE02DE260F4ACD0046E93B /* HomeViewController.swift in Sources */,
 				63CE02A7260F35C80046E93B /* ViewController.swift in Sources */,
+				63CE02ED260F56720046E93B /* AttendingScheduleViewController.swift in Sources */,
 				63CE02D9260F42750046E93B /* WelcomeViewController.swift in Sources */,
 				63CE02A3260F35C80046E93B /* AppDelegate.swift in Sources */,
 				63CE02A5260F35C80046E93B /* SceneDelegate.swift in Sources */,
 				63CE02E3260F4F230046E93B /* SettingsViewController.swift in Sources */,
+				63CE02E8260F56550046E93B /* HostingScheduleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
