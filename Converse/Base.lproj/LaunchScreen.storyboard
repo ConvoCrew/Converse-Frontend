@@ -24,10 +24,9 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Converse." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UAe-MZ-6xe">
-                                <rect key="frame" x="145" y="520" width="124" height="47"/>
+                                <rect key="frame" x="154" y="509" width="107" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="9dN-8U-nhq"/>
-                                    <constraint firstAttribute="width" constant="124" id="DOo-CF-9Rz"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="NotoSansOriya-Bold" family="Noto Sans Oriya" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -38,9 +37,9 @@
                         <color key="backgroundColor" name="AccentColor"/>
                         <constraints>
                             <constraint firstItem="ls8-R1-DYz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="134" id="1VM-FW-lfj"/>
-                            <constraint firstItem="UAe-MZ-6xe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="145" id="FVZ-wO-1Po"/>
+                            <constraint firstItem="UAe-MZ-6xe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="154" id="Jwd-y8-4bC"/>
                             <constraint firstItem="ls8-R1-DYz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="292" id="O8p-Fd-YYf"/>
-                            <constraint firstItem="UAe-MZ-6xe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="476" id="gmu-hc-tYA"/>
+                            <constraint firstItem="UAe-MZ-6xe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="465" id="oqA-zg-2VB"/>
                         </constraints>
                     </view>
                 </viewController>

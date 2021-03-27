@@ -1,24 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Juj-Nh-Pco">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--WelcomeViewController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="WelcomeViewController" id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="Converse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="converse-icon" translatesAutoresizingMaskIntoConstraints="NO" id="rQb-Kz-Jii">
+                                <rect key="frame" x="30" y="178" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="0oQ-OD-lUZ"/>
+                                    <constraint firstAttribute="width" constant="120" id="oLQ-fY-uzf"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Converse." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5c-nW-Za6">
+                                <rect key="frame" x="30" y="323" width="184.5" height="53.5"/>
+                                <fontDescription key="fontDescription" name="NotoSansOriya-Bold" family="Noto Sans Oriya" pointSize="38"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6WH-y9-zcn">
+                                <rect key="frame" x="20" y="406.5" width="374" height="90"/>
+                                <string key="text">Converse is a students roundtable audio-only platform to learn, discuss topics, homeworks or exchange ideas with classmates or other students around the world.</string>
+                                <fontDescription key="fontDescription" name="NotoSansOriya" family="Noto Sans Oriya" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No sign up required: nickname &amp; avatar is all you need" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8a-cw-fgu">
+                                <rect key="frame" x="34" y="815" width="350" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p6h-Hq-QFs">
+                                <rect key="frame" x="30" y="734" width="354" height="61"/>
+                                <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="m8e-7Q-44Y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NotoSansOriya" family="Noto Sans Oriya" pointSize="17"/>
+                                <state key="normal" title="Start Conversation 🗣️ ">
+                                    <color key="titleColor" name="AccentColor"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="AccentColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6WH-y9-zcn" secondAttribute="trailing" constant="20" id="7bK-o9-r43"/>
+                            <constraint firstItem="e5c-nW-Za6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="BCg-tU-aTf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="p6h-Hq-QFs" secondAttribute="trailing" constant="30" id="Dy8-DM-PpE"/>
+                            <constraint firstItem="6WH-y9-zcn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="JNx-GM-YAY"/>
+                            <constraint firstItem="rQb-Kz-Jii" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Odd-X4-sdH"/>
+                            <constraint firstItem="o8a-cw-fgu" firstAttribute="top" secondItem="p6h-Hq-QFs" secondAttribute="bottom" constant="20" id="Qac-lD-ERH"/>
+                            <constraint firstItem="6WH-y9-zcn" firstAttribute="top" secondItem="e5c-nW-Za6" secondAttribute="bottom" constant="30" id="eZq-cv-KEQ"/>
+                            <constraint firstItem="rQb-Kz-Jii" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90" id="g0K-aR-UXv"/>
+                            <constraint firstItem="e5c-nW-Za6" firstAttribute="top" secondItem="rQb-Kz-Jii" secondAttribute="bottom" constant="25" id="mWa-of-sc6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="o8a-cw-fgu" secondAttribute="bottom" constant="30" id="r3b-gy-r1g"/>
+                            <constraint firstItem="p6h-Hq-QFs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="rIt-Q1-1EW"/>
+                            <constraint firstItem="o8a-cw-fgu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="t7t-6a-fxb"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Welcome" id="mnJ-nP-exQ"/>
+                    <connections>
+                        <outlet property="appDescriptionLabel" destination="6WH-y9-zcn" id="k91-PC-Xbw"/>
+                        <outlet property="appNameLabel" destination="e5c-nW-Za6" id="tvw-X9-2hb"/>
+                        <outlet property="iconImage" destination="rQb-Kz-Jii" id="OhY-cN-VCI"/>
+                        <outlet property="noteLabel" destination="o8a-cw-fgu" id="u4M-BF-z6f"/>
+                        <outlet property="startConvoButton" destination="p6h-Hq-QFs" id="QdK-r6-eVW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="955.07246376811599" y="93.75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Iuy-4O-xwH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Juj-Nh-Pco" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oSe-Ir-kJG">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="6R1-fM-bs5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w9y-e9-soT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44.927536231884062" y="93.75"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="converse-icon" width="60" height="60"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.0" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
