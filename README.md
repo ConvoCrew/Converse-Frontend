@@ -29,6 +29,9 @@ Our application can also be used by universities to connect students with potent
 - We documented our API using Postman. (Link here) 
 - (regarding deploying) 
 
+## Video Walkthrough (Figma UI Design Simulation)
+<img src=http://g.recordit.co/DGyy1kW5gd.gif width=250><br>
+
 ## Video Walkthrough (Current App Simulation)
 <img src=http://g.recordit.co/BKv9kxV8Ds.gif><br>
 
