@@ -48,5 +48,6 @@ We learned many new things as follows:
  
 ## What's next for Converse App 
 We plan to release the final version to the AppStore and market it through educational institutions, student clubs, and influencers. Build more room features, to support debates and quizzes and add premium functionality, including an option to record discussions as podcasts. 
-It will also be great to improve on the explore section using so that when students open the app it will show the rooms that are perfectly tailored to their interests. And with ML/AI, we can add another feature of suggested rooms according to the student’s interests and categories it most interacted with 
+It will also be great to improve on the explore section using so that when students open the app it will show the rooms that are perfectly tailored to their interests. And with ML/AI, we can add another feature of suggested rooms according to the student’s interests and categories it most interacted with.
+
 The future is exciting :) 
