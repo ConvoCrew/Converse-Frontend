@@ -30,6 +30,8 @@
 		63CE0318261074280046E93B /* BackStageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CE0317261074280046E93B /* BackStageViewController.swift */; };
 		63CE031D261074F50046E93B /* HostNotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CE031C261074F50046E93B /* HostNotesViewController.swift */; };
 		63CE03222610763F0046E93B /* AddToScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CE03212610763F0046E93B /* AddToScheduleViewController.swift */; };
+		63CE03272610831A0046E93B /* LiveNowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CE03262610831A0046E93B /* LiveNowViewController.swift */; };
+		63CE032C2610833F0046E93B /* UpcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CE032B2610833F0046E93B /* UpcomingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,8 @@
 		63CE0317261074280046E93B /* BackStageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackStageViewController.swift; sourceTree = "<group>"; };
 		63CE031C261074F50046E93B /* HostNotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostNotesViewController.swift; sourceTree = "<group>"; };
 		63CE03212610763F0046E93B /* AddToScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToScheduleViewController.swift; sourceTree = "<group>"; };
+		63CE03262610831A0046E93B /* LiveNowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveNowViewController.swift; sourceTree = "<group>"; };
+		63CE032B2610833F0046E93B /* UpcomingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +137,8 @@
 				63CE02A4260F35C80046E93B /* SceneDelegate.swift */,
 				63CE02A6260F35C80046E93B /* ViewController.swift */,
 				63CE02A8260F35C80046E93B /* Main.storyboard */,
+				63CE032B2610833F0046E93B /* UpcomingViewController.swift */,
+				63CE03262610831A0046E93B /* LiveNowViewController.swift */,
 				63CE03212610763F0046E93B /* AddToScheduleViewController.swift */,
 				63CE031C261074F50046E93B /* HostNotesViewController.swift */,
 				63CE0317261074280046E93B /* BackStageViewController.swift */,
@@ -311,6 +317,7 @@
 				63CE02A7260F35C80046E93B /* ViewController.swift in Sources */,
 				63CE02FF260FF3800046E93B /* NumOfParticipantsViewController.swift in Sources */,
 				63CE02ED260F56720046E93B /* AttendingScheduleViewController.swift in Sources */,
+				63CE032C2610833F0046E93B /* UpcomingViewController.swift in Sources */,
 				63CE02D9260F42750046E93B /* WelcomeViewController.swift in Sources */,
 				63CE031D261074F50046E93B /* HostNotesViewController.swift in Sources */,
 				63CE02F2260F5A670046E93B /* CreateRoomViewController.swift in Sources */,
@@ -318,6 +325,7 @@
 				63CE02A5260F35C80046E93B /* SceneDelegate.swift in Sources */,
 				63CE0318261074280046E93B /* BackStageViewController.swift in Sources */,
 				63CE03222610763F0046E93B /* AddToScheduleViewController.swift in Sources */,
+				63CE03272610831A0046E93B /* LiveNowViewController.swift in Sources */,
 				63CE02E3260F4F230046E93B /* SettingsViewController.swift in Sources */,
 				63CE02E8260F56550046E93B /* HostingScheduleViewController.swift in Sources */,
 				63CE0309260FF6BB0046E93B /* DebateViewController.swift in Sources */,
