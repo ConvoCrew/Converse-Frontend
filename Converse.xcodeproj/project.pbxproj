@@ -26,6 +26,10 @@
 		63CE0304260FF5170046E93B /* StudyMaterialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CE0303260FF5170046E93B /* StudyMaterialViewController.swift */; };
 		63CE0309260FF6BB0046E93B /* DebateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CE0308260FF6BB0046E93B /* DebateViewController.swift */; };
 		63CE030E260FF6D50046E93B /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CE030D260FF6D50046E93B /* QuizViewController.swift */; };
+		63CE0313261072A50046E93B /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CE0312261072A50046E93B /* LiveViewController.swift */; };
+		63CE0318261074280046E93B /* BackStageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CE0317261074280046E93B /* BackStageViewController.swift */; };
+		63CE031D261074F50046E93B /* HostNotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CE031C261074F50046E93B /* HostNotesViewController.swift */; };
+		63CE03222610763F0046E93B /* AddToScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CE03212610763F0046E93B /* AddToScheduleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +75,10 @@
 		63CE0303260FF5170046E93B /* StudyMaterialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyMaterialViewController.swift; sourceTree = "<group>"; };
 		63CE0308260FF6BB0046E93B /* DebateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebateViewController.swift; sourceTree = "<group>"; };
 		63CE030D260FF6D50046E93B /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		63CE0312261072A50046E93B /* LiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
+		63CE0317261074280046E93B /* BackStageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackStageViewController.swift; sourceTree = "<group>"; };
+		63CE031C261074F50046E93B /* HostNotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostNotesViewController.swift; sourceTree = "<group>"; };
+		63CE03212610763F0046E93B /* AddToScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToScheduleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +133,10 @@
 				63CE02A4260F35C80046E93B /* SceneDelegate.swift */,
 				63CE02A6260F35C80046E93B /* ViewController.swift */,
 				63CE02A8260F35C80046E93B /* Main.storyboard */,
+				63CE03212610763F0046E93B /* AddToScheduleViewController.swift */,
+				63CE031C261074F50046E93B /* HostNotesViewController.swift */,
+				63CE0317261074280046E93B /* BackStageViewController.swift */,
+				63CE0312261072A50046E93B /* LiveViewController.swift */,
 				63CE030D260FF6D50046E93B /* QuizViewController.swift */,
 				63CE0308260FF6BB0046E93B /* DebateViewController.swift */,
 				63CE02F9260FEF4E0046E93B /* CategoryViewController.swift */,
@@ -295,13 +307,17 @@
 				63CE030E260FF6D50046E93B /* QuizViewController.swift in Sources */,
 				63CE0304260FF5170046E93B /* StudyMaterialViewController.swift in Sources */,
 				63CE02DE260F4ACD0046E93B /* HomeViewController.swift in Sources */,
+				63CE0313261072A50046E93B /* LiveViewController.swift in Sources */,
 				63CE02A7260F35C80046E93B /* ViewController.swift in Sources */,
 				63CE02FF260FF3800046E93B /* NumOfParticipantsViewController.swift in Sources */,
 				63CE02ED260F56720046E93B /* AttendingScheduleViewController.swift in Sources */,
 				63CE02D9260F42750046E93B /* WelcomeViewController.swift in Sources */,
+				63CE031D261074F50046E93B /* HostNotesViewController.swift in Sources */,
 				63CE02F2260F5A670046E93B /* CreateRoomViewController.swift in Sources */,
 				63CE02A3260F35C80046E93B /* AppDelegate.swift in Sources */,
 				63CE02A5260F35C80046E93B /* SceneDelegate.swift in Sources */,
+				63CE0318261074280046E93B /* BackStageViewController.swift in Sources */,
+				63CE03222610763F0046E93B /* AddToScheduleViewController.swift in Sources */,
 				63CE02E3260F4F230046E93B /* SettingsViewController.swift in Sources */,
 				63CE02E8260F56550046E93B /* HostingScheduleViewController.swift in Sources */,
 				63CE0309260FF6BB0046E93B /* DebateViewController.swift in Sources */,
