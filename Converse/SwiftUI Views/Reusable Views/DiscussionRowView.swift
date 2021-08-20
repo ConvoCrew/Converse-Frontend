@@ -79,7 +79,7 @@ struct DiscussionRowView: View {
                 
                 HStack {
                     Spacer()
-                    if discussion.isLive != false {
+                    if !discussion.isLive {
                         Text(discussion.dateTime, style: .relative)
                             .foregroundColor(.primaryBlue)
                     }

@@ -24,11 +24,11 @@ struct ContentView: View {
                                          selection: $selection)
             
             ScrollView(.vertical, showsIndicators: true) {
-                ForEach(0 ..< 15) { item in
+                ForEach(0 ..< 15) { _ in
                     if selection == 0 {
                         DiscussionRowView(discussion: .liveExample)
                     } else {
-                        DiscussionRowView(discussion: .eupComingExample)
+                        DiscussionRowView(discussion: .upComingExample)
 
                     }
                     Color.white.frame(height: 1)
