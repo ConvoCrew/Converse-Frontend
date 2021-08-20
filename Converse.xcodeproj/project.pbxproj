@@ -32,6 +32,10 @@
 		63CE03222610763F0046E93B /* AddToScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CE03212610763F0046E93B /* AddToScheduleViewController.swift */; };
 		63CE03272610831A0046E93B /* LiveNowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CE03262610831A0046E93B /* LiveNowViewController.swift */; };
 		63CE032C2610833F0046E93B /* UpcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CE032B2610833F0046E93B /* UpcomingViewController.swift */; };
+		82B0723A26D02DF300C06120 /* Product Sans Bold Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 82B0723626D02DF300C06120 /* Product Sans Bold Italic.ttf */; };
+		82B0723B26D02DF300C06120 /* Product Sans Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 82B0723726D02DF300C06120 /* Product Sans Bold.ttf */; };
+		82B0723C26D02DF300C06120 /* Product Sans Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 82B0723826D02DF300C06120 /* Product Sans Italic.ttf */; };
+		82B0723D26D02DF300C06120 /* Product Sans Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 82B0723926D02DF300C06120 /* Product Sans Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +87,10 @@
 		63CE03212610763F0046E93B /* AddToScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToScheduleViewController.swift; sourceTree = "<group>"; };
 		63CE03262610831A0046E93B /* LiveNowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveNowViewController.swift; sourceTree = "<group>"; };
 		63CE032B2610833F0046E93B /* UpcomingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingViewController.swift; sourceTree = "<group>"; };
+		82B0723626D02DF300C06120 /* Product Sans Bold Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Product Sans Bold Italic.ttf"; sourceTree = "<group>"; };
+		82B0723726D02DF300C06120 /* Product Sans Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Product Sans Bold.ttf"; sourceTree = "<group>"; };
+		82B0723826D02DF300C06120 /* Product Sans Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Product Sans Italic.ttf"; sourceTree = "<group>"; };
+		82B0723926D02DF300C06120 /* Product Sans Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Product Sans Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,25 +143,12 @@
 			children = (
 				63CE02A2260F35C80046E93B /* AppDelegate.swift */,
 				63CE02A4260F35C80046E93B /* SceneDelegate.swift */,
-				63CE02A6260F35C80046E93B /* ViewController.swift */,
-				63CE02A8260F35C80046E93B /* Main.storyboard */,
-				63CE032B2610833F0046E93B /* UpcomingViewController.swift */,
-				63CE03262610831A0046E93B /* LiveNowViewController.swift */,
-				63CE03212610763F0046E93B /* AddToScheduleViewController.swift */,
-				63CE031C261074F50046E93B /* HostNotesViewController.swift */,
-				63CE0317261074280046E93B /* BackStageViewController.swift */,
-				63CE0312261072A50046E93B /* LiveViewController.swift */,
-				63CE030D260FF6D50046E93B /* QuizViewController.swift */,
-				63CE0308260FF6BB0046E93B /* DebateViewController.swift */,
-				63CE02F9260FEF4E0046E93B /* CategoryViewController.swift */,
-				63CE02FE260FF37F0046E93B /* NumOfParticipantsViewController.swift */,
-				63CE0303260FF5170046E93B /* StudyMaterialViewController.swift */,
-				63CE02F1260F5A670046E93B /* CreateRoomViewController.swift */,
-				63CE02EC260F56720046E93B /* AttendingScheduleViewController.swift */,
-				63CE02E7260F56550046E93B /* HostingScheduleViewController.swift */,
-				63CE02E2260F4F230046E93B /* SettingsViewController.swift */,
-				63CE02DD260F4ACD0046E93B /* HomeViewController.swift */,
-				63CE02D8260F42750046E93B /* WelcomeViewController.swift */,
+				82B0723426D02DA700C06120 /* SwiftUI Views */,
+				82B0723526D02DB700C06120 /* UIKit Views */,
+				82B0723E26D02EA500C06120 /* Storyboards */,
+				82B0723026D02D7400C06120 /* View Controllers */,
+				82B0723226D02D8A00C06120 /* Networking */,
+				82B0723126D02D8100C06120 /* Resources */,
 				63CE02AB260F35CF0046E93B /* Assets.xcassets */,
 				63CE02AD260F35CF0046E93B /* LaunchScreen.storyboard */,
 				63CE02B0260F35CF0046E93B /* Info.plist */,
@@ -177,6 +172,87 @@
 				63CE02C6260F35CF0046E93B /* Info.plist */,
 			);
 			path = ConverseUITests;
+			sourceTree = "<group>";
+		};
+		82B0722F26D02D6800C06120 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				82B0723626D02DF300C06120 /* Product Sans Bold Italic.ttf */,
+				82B0723726D02DF300C06120 /* Product Sans Bold.ttf */,
+				82B0723826D02DF300C06120 /* Product Sans Italic.ttf */,
+				82B0723926D02DF300C06120 /* Product Sans Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		82B0723026D02D7400C06120 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				63CE02A6260F35C80046E93B /* ViewController.swift */,
+				63CE032B2610833F0046E93B /* UpcomingViewController.swift */,
+				63CE03262610831A0046E93B /* LiveNowViewController.swift */,
+				63CE03212610763F0046E93B /* AddToScheduleViewController.swift */,
+				63CE031C261074F50046E93B /* HostNotesViewController.swift */,
+				63CE0317261074280046E93B /* BackStageViewController.swift */,
+				63CE0312261072A50046E93B /* LiveViewController.swift */,
+				63CE030D260FF6D50046E93B /* QuizViewController.swift */,
+				63CE0308260FF6BB0046E93B /* DebateViewController.swift */,
+				63CE02F9260FEF4E0046E93B /* CategoryViewController.swift */,
+				63CE02FE260FF37F0046E93B /* NumOfParticipantsViewController.swift */,
+				63CE0303260FF5170046E93B /* StudyMaterialViewController.swift */,
+				63CE02F1260F5A670046E93B /* CreateRoomViewController.swift */,
+				63CE02EC260F56720046E93B /* AttendingScheduleViewController.swift */,
+				63CE02E7260F56550046E93B /* HostingScheduleViewController.swift */,
+				63CE02E2260F4F230046E93B /* SettingsViewController.swift */,
+				63CE02DD260F4ACD0046E93B /* HomeViewController.swift */,
+				63CE02D8260F42750046E93B /* WelcomeViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		82B0723126D02D8100C06120 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				82B0723326D02D9C00C06120 /* Utilities */,
+				82B0722F26D02D6800C06120 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		82B0723226D02D8A00C06120 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		82B0723326D02D9C00C06120 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		82B0723426D02DA700C06120 /* SwiftUI Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "SwiftUI Views";
+			sourceTree = "<group>";
+		};
+		82B0723526D02DB700C06120 /* UIKit Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "UIKit Views";
+			sourceTree = "<group>";
+		};
+		82B0723E26D02EA500C06120 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				63CE02A8260F35C80046E93B /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,8 +359,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				63CE02AF260F35CF0046E93B /* LaunchScreen.storyboard in Resources */,
+				82B0723D26D02DF300C06120 /* Product Sans Regular.ttf in Resources */,
+				82B0723B26D02DF300C06120 /* Product Sans Bold.ttf in Resources */,
+				82B0723A26D02DF300C06120 /* Product Sans Bold Italic.ttf in Resources */,
 				63CE02AC260F35CF0046E93B /* Assets.xcassets in Resources */,
 				63CE02AA260F35C80046E93B /* Main.storyboard in Resources */,
+				82B0723C26D02DF300C06120 /* Product Sans Italic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
