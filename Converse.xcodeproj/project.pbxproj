@@ -37,6 +37,8 @@
 		82B0723C26D02DF300C06120 /* Product Sans Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 82B0723826D02DF300C06120 /* Product Sans Italic.ttf */; };
 		82B0723D26D02DF300C06120 /* Product Sans Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 82B0723926D02DF300C06120 /* Product Sans Regular.ttf */; };
 		82B0724126D02F3900C06120 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B0724026D02F3900C06120 /* Fonts.swift */; };
+		82B0724426D0383700C06120 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B0724326D0383700C06120 /* ContentView.swift */; };
+		82B0724626D0391600C06120 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B0724526D0391600C06120 /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +95,8 @@
 		82B0723826D02DF300C06120 /* Product Sans Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Product Sans Italic.ttf"; sourceTree = "<group>"; };
 		82B0723926D02DF300C06120 /* Product Sans Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Product Sans Regular.ttf"; sourceTree = "<group>"; };
 		82B0724026D02F3900C06120 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		82B0724326D0383700C06120 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		82B0724526D0391600C06120 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +149,7 @@
 			children = (
 				63CE02A2260F35C80046E93B /* AppDelegate.swift */,
 				63CE02A4260F35C80046E93B /* SceneDelegate.swift */,
+				82B0724326D0383700C06120 /* ContentView.swift */,
 				82B0723426D02DA700C06120 /* SwiftUI Views */,
 				82B0723526D02DB700C06120 /* UIKit Views */,
 				82B0723E26D02EA500C06120 /* Storyboards */,
@@ -262,6 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				82B0724026D02F3900C06120 /* Fonts.swift */,
+				82B0724526D0391600C06120 /* Colors.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -412,6 +418,8 @@
 				63CE032C2610833F0046E93B /* UpcomingViewController.swift in Sources */,
 				63CE02D9260F42750046E93B /* WelcomeViewController.swift in Sources */,
 				63CE031D261074F50046E93B /* HostNotesViewController.swift in Sources */,
+				82B0724426D0383700C06120 /* ContentView.swift in Sources */,
+				82B0724626D0391600C06120 /* Colors.swift in Sources */,
 				63CE02F2260F5A670046E93B /* CreateRoomViewController.swift in Sources */,
 				63CE02A3260F35C80046E93B /* AppDelegate.swift in Sources */,
 				63CE02A5260F35C80046E93B /* SceneDelegate.swift in Sources */,
