@@ -23,39 +23,19 @@ struct ContentView: View {
             SegmentControlView(options: ["Live Now", "Upcoming"],
                                          selection: $selection)
             
-            VStack(alignment: .leading, spacing: 3) {
-                Text("Difference between Capitalism & Socialism")
-                HStack(spacing: 5) {
-                    LabelView("Category:", value: "Social")
-                    Text("|").foregroundColor(.offWhite)
-                    LabelView("Host:", value: "John")
-                }
-                
-                HStack {
-                    
-                    Label(
-                        title: { Text("10/20").foregroundColor(.offWhite) },
-                        icon: { Image("people.two").foregroundColor(.primaryBlue) }
-)
-                    Button(action: {}, label: {
-                        Label("Notes", systemImage: "arrowtriangle.down.fill")
-                    })
-                    
-                    Spacer()
-                    Button(action: {}, label: {
-                        Text("Join")
-                            .foregroundColor(.white)
-                            .frame(maxWidth: 85, maxHeight: 30)
-                            .background(Color.primaryBlue)
-                            .clipShape(Capsule())
-                    })
-                }
-                .font(.prodSans(.bold))
+            ScrollView(.vertical, showsIndicators: true) {
+                ForEach(0 ..< 15) { item in
+                    if selection == 0 {
+                        DiscussionRowView(discussion: .liveExample)
+                    } else {
+                        DiscussionRowView(discussion: .eupComingExample)
 
+                    }
+                    Color.white.frame(height: 1)
+                }
             }
-            Spacer()
         }
-        .padding()
+        .padding([.horizontal,.top])
         .foregroundColor(.white)
         .background(Color.backgroundBlue.ignoresSafeArea())
     }
@@ -64,27 +44,5 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-    }
-}
-
-
-
-struct LabelView: View {
-    init(_ title: String, value: String) {
-        self.title = title
-        self.value = value
-    }
-    
-    let title: String
-    let value: String
-    var body: some View {
-        HStack(spacing: 2) {
-            Text(title)
-                .foregroundColor(.primaryBlue)
-                .font(.prodSans(.bold))
-            Text(value)
-                .foregroundColor(.white)
-                .font(.prodSans(.regular, size: 15))
-        }
     }
 }

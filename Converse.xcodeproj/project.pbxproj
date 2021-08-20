@@ -41,6 +41,7 @@
 		82B0724626D0391600C06120 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B0724526D0391600C06120 /* Colors.swift */; };
 		82B0724826D043FB00C06120 /* WelcomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B0724726D043FB00C06120 /* WelcomePageView.swift */; };
 		82B0724B26D056B400C06120 /* SegmentControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B0724A26D056B400C06120 /* SegmentControlView.swift */; };
+		82B0724D26D05D9100C06120 /* DiscussionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B0724C26D05D9100C06120 /* DiscussionRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 		82B0724526D0391600C06120 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		82B0724726D043FB00C06120 /* WelcomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageView.swift; sourceTree = "<group>"; };
 		82B0724A26D056B400C06120 /* SegmentControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentControlView.swift; sourceTree = "<group>"; };
+		82B0724C26D05D9100C06120 /* DiscussionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscussionRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,6 +284,7 @@
 			isa = PBXGroup;
 			children = (
 				82B0724A26D056B400C06120 /* SegmentControlView.swift */,
+				82B0724C26D05D9100C06120 /* DiscussionRowView.swift */,
 			);
 			path = "Reusable Views";
 			sourceTree = "<group>";
@@ -441,6 +444,7 @@
 				63CE03222610763F0046E93B /* AddToScheduleViewController.swift in Sources */,
 				63CE03272610831A0046E93B /* LiveNowViewController.swift in Sources */,
 				82B0724826D043FB00C06120 /* WelcomePageView.swift in Sources */,
+				82B0724D26D05D9100C06120 /* DiscussionRowView.swift in Sources */,
 				63CE02E3260F4F230046E93B /* SettingsViewController.swift in Sources */,
 				63CE02E8260F56550046E93B /* HostingScheduleViewController.swift in Sources */,
 				82B0724B26D056B400C06120 /* SegmentControlView.swift in Sources */,
