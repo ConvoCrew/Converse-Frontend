@@ -8,58 +8,83 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var selection = 0
     var body: some View {
-        VStack(alignment: .leading, spacing: 30) {
-            Image("converse-icon")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 120)
-            Text("Converse")
-                .font(.prodSans(.bold,size: 38))
-            
-            
-            Text("Converse is a students roundtable audio-only platform to learn, discuss topics, homeworks or exchange ideas with classmates or other students around the world.")
-                .font(.prodSans(.bold, size: 18))
-                .foregroundColor(.offWhite)
-            Spacer()
-            
-            
-            VStack(spacing: 20) {
-                Button(action: {
-                    
-                }, label: {
-                    HStack(spacing: 5) {
-                        Text("Start Conversing")
-                        Text("🗣️")
-                        
-                    }
-                    .font(.prodSans(.bold, size: 20))
-                    .foregroundColor(.secondaryBlue)
-                    .frame(maxWidth: 250, maxHeight: 65)
-                    .background(Color.offWhite)
-                    .cornerRadius(15)
-                })
+        VStack(spacing: 15) {
+            HStack {
+                Text("Explore")
+                    .font(.prodSans(.bold, size: 38))
+                Spacer()
                 
-                
-                Text("No sign up required: \(Text("nickname & avatar is all you need").foregroundColor(.offWhite))")
-                    .font(.prodSans(size: 16))
-                    .lineLimit(1)
-                    .minimumScaleFactor(0.5)
+                Image("filter")
             }
-            .frame(maxWidth: .infinity)
             
+            SegmentControlView(options: ["Live Now", "Upcoming"],
+                                         selection: $selection)
+            
+            VStack(alignment: .leading, spacing: 3) {
+                Text("Difference between Capitalism & Socialism")
+                HStack(spacing: 5) {
+                    LabelView("Category:", value: "Social")
+                    Text("|").foregroundColor(.offWhite)
+                    LabelView("Host:", value: "John")
+                }
+                
+                HStack {
+                    
+                    Label(
+                        title: { Text("10/20").foregroundColor(.offWhite) },
+                        icon: { Image("people.two").foregroundColor(.primaryBlue) }
+)
+                    Button(action: {}, label: {
+                        Label("Notes", systemImage: "arrowtriangle.down.fill")
+                    })
+                    
+                    Spacer()
+                    Button(action: {}, label: {
+                        Text("Join")
+                            .foregroundColor(.white)
+                            .frame(maxWidth: 85, maxHeight: 30)
+                            .background(Color.primaryBlue)
+                            .clipShape(Capsule())
+                    })
+                }
+                .font(.prodSans(.bold))
+
+            }
+            Spacer()
         }
-        .padding(20)
-        .frame(maxWidth: .infinity)
+        .padding()
         .foregroundColor(.white)
-        .background(
-            Color.backgroundBlue.ignoresSafeArea()
-        )
+        .background(Color.backgroundBlue.ignoresSafeArea())
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+
+
+struct LabelView: View {
+    init(_ title: String, value: String) {
+        self.title = title
+        self.value = value
+    }
+    
+    let title: String
+    let value: String
+    var body: some View {
+        HStack(spacing: 2) {
+            Text(title)
+                .foregroundColor(.primaryBlue)
+                .font(.prodSans(.bold))
+            Text(value)
+                .foregroundColor(.white)
+                .font(.prodSans(.regular, size: 15))
+        }
     }
 }

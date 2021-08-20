@@ -973,8 +973,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="bi_people" translatesAutoresizingMaskIntoConstraints="NO" id="Jai-77-VLW">
-                                <rect key="frame" x="316.5" y="148" width="22" height="22"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="people.two" translatesAutoresizingMaskIntoConstraints="NO" id="Jai-77-VLW">
+                                <rect key="frame" x="210.5" y="148" width="128" height="128"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/0" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7QE-i4-uw2">
                                 <rect key="frame" x="348.5" y="149" width="25.5" height="20.5"/>
@@ -1431,7 +1431,7 @@
                                     <constraint firstAttribute="height" constant="38" id="6oh-z7-Huz"/>
                                     <constraint firstAttribute="width" constant="44" id="KIq-iT-EA5"/>
                                 </constraints>
-                                <state key="normal" image="filterbutton"/>
+                                <state key="normal" image="filter"/>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hIH-DU-1Ic">
                                 <rect key="frame" x="0.0" y="189" width="414" height="707"/>
@@ -1479,11 +1479,11 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="bi_people" translatesAutoresizingMaskIntoConstraints="NO" id="n2a-sI-lQu">
-                                                    <rect key="frame" x="10" y="65" width="22" height="22"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="people.two" translatesAutoresizingMaskIntoConstraints="NO" id="n2a-sI-lQu">
+                                                    <rect key="frame" x="10" y="65" width="128" height="128"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/0" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQU-pJ-r3x">
-                                                    <rect key="frame" x="40" y="66" width="25.5" height="20.5"/>
+                                                    <rect key="frame" x="146" y="66" width="25.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -1579,7 +1579,7 @@
                                     <constraint firstAttribute="height" constant="38" id="qvz-7p-hgd"/>
                                     <constraint firstAttribute="width" constant="44" id="tHe-VA-tGs"/>
                                 </constraints>
-                                <state key="normal" image="filterbutton"/>
+                                <state key="normal" image="filter"/>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1g4-5T-8Jj">
                                 <rect key="frame" x="0.0" y="189" width="414" height="707"/>
@@ -1627,11 +1627,11 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="bi_people" translatesAutoresizingMaskIntoConstraints="NO" id="Fea-J4-gST">
-                                                    <rect key="frame" x="10" y="65" width="22" height="22"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="people.two" translatesAutoresizingMaskIntoConstraints="NO" id="Fea-J4-gST">
+                                                    <rect key="frame" x="10" y="65" width="128" height="128"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/0" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oB2-MY-1CU">
-                                                    <rect key="frame" x="40" y="66" width="25.5" height="20.5"/>
+                                                    <rect key="frame" x="146" y="66" width="25.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -1983,11 +1983,11 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="bi_people" translatesAutoresizingMaskIntoConstraints="NO" id="KgD-VT-rM8">
-                                                    <rect key="frame" x="10" y="65" width="22" height="22"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="people.two" translatesAutoresizingMaskIntoConstraints="NO" id="KgD-VT-rM8">
+                                                    <rect key="frame" x="10" y="65" width="128" height="128"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/0" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QbD-yu-HsG">
-                                                    <rect key="frame" x="40" y="66" width="25.5" height="20.5"/>
+                                                    <rect key="frame" x="146" y="66" width="25.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -2123,11 +2123,11 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="bi_people" translatesAutoresizingMaskIntoConstraints="NO" id="jcg-NP-Oyi">
-                                                    <rect key="frame" x="10" y="65" width="22" height="22"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="people.two" translatesAutoresizingMaskIntoConstraints="NO" id="jcg-NP-Oyi">
+                                                    <rect key="frame" x="10" y="65" width="128" height="128"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/0" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yG1-iC-cvI">
-                                                    <rect key="frame" x="40" y="66" width="25.5" height="20.5"/>
+                                                    <rect key="frame" x="146" y="66" width="25.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -2381,11 +2381,10 @@ scheduled rooms. Verified mark will be given to host accounts with more discussi
         <image name="admit" width="29" height="29"/>
         <image name="ant-design_edit-outlined" width="25" height="25"/>
         <image name="apple" width="18" height="21"/>
-        <image name="bi_people" width="22" height="22"/>
         <image name="calender" width="21" height="24"/>
         <image name="carbon_microphone" width="19" height="19"/>
-        <image name="converse-icon" width="60" height="60"/>
-        <image name="filterbutton" width="28" height="28"/>
+        <image name="converse-icon" width="120" height="120"/>
+        <image name="filter" width="128" height="128"/>
         <image name="folder.badge.plus" catalog="system" width="128" height="91"/>
         <image name="google" width="23" height="23"/>
         <image name="gridicons_sign-out" width="24" height="25"/>
@@ -2393,6 +2392,7 @@ scheduled rooms. Verified mark will be given to host accounts with more discussi
         <image name="mic.fill" catalog="system" width="108" height="128"/>
         <image name="note.text.badge.plus" catalog="system" width="128" height="108"/>
         <image name="paperplane.circle" catalog="system" width="128" height="121"/>
+        <image name="people.two" width="128" height="128"/>
         <image name="setting" width="25" height="25"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.0" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

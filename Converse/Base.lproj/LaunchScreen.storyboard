@@ -17,29 +17,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="converse-icon" translatesAutoresizingMaskIntoConstraints="NO" id="ls8-R1-DYz">
-                                <rect key="frame" x="134" y="336" width="146" height="193"/>
+                                <rect key="frame" x="117" y="358" width="180" height="180"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="146" id="5kB-8y-7Qm"/>
-                                    <constraint firstAttribute="height" constant="193" id="sEq-3g-6sV"/>
+                                    <constraint firstAttribute="width" constant="180" id="Ia2-fM-2nS"/>
+                                    <constraint firstAttribute="width" secondItem="ls8-R1-DYz" secondAttribute="height" id="L6D-Xg-2Pt"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Converse." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UAe-MZ-6xe">
-                                <rect key="frame" x="154" y="509" width="107" height="47"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="47" id="9dN-8U-nhq"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="NotoSansOriya-Bold" family="Noto Sans Oriya" pointSize="22"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="AccentColor"/>
                         <constraints>
-                            <constraint firstItem="ls8-R1-DYz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="134" id="1VM-FW-lfj"/>
-                            <constraint firstItem="UAe-MZ-6xe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="154" id="Jwd-y8-4bC"/>
-                            <constraint firstItem="ls8-R1-DYz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="292" id="O8p-Fd-YYf"/>
-                            <constraint firstItem="UAe-MZ-6xe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="465" id="oqA-zg-2VB"/>
+                            <constraint firstItem="ls8-R1-DYz" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="3jQ-NX-jHi"/>
+                            <constraint firstItem="ls8-R1-DYz" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="tPE-ua-SG0"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -49,7 +38,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="converse-icon" width="60" height="60"/>
+        <image name="converse-icon" width="120" height="120"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.0" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
