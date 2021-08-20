@@ -60,5 +60,7 @@
 		<string>Product Sans Italic.ttf</string>
 		<string>Product Sans Regular.ttf</string>
 	</array>
+	<key>UIUserInterfaceStyle</key>
+	<string>Light</string>
 </dict>
 </plist>
