@@ -42,6 +42,10 @@
 		82B0724826D043FB00C06120 /* WelcomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B0724726D043FB00C06120 /* WelcomePageView.swift */; };
 		82B0724B26D056B400C06120 /* SegmentControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B0724A26D056B400C06120 /* SegmentControlView.swift */; };
 		82B0724D26D05D9100C06120 /* DiscussionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B0724C26D05D9100C06120 /* DiscussionRowView.swift */; };
+		82C4241B26D10BEB00EF9010 /* ExplorePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C4241A26D10BEB00EF9010 /* ExplorePageView.swift */; };
+		82C4242126D10CBE00EF9010 /* SchedulePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C4242026D10CBE00EF9010 /* SchedulePageView.swift */; };
+		82C4242326D1121000EF9010 /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C4242226D1121000EF9010 /* Views.swift */; };
+		82C4242526D116F800EF9010 /* ProfilePageview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C4242426D116F800EF9010 /* ProfilePageview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +107,10 @@
 		82B0724726D043FB00C06120 /* WelcomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageView.swift; sourceTree = "<group>"; };
 		82B0724A26D056B400C06120 /* SegmentControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentControlView.swift; sourceTree = "<group>"; };
 		82B0724C26D05D9100C06120 /* DiscussionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscussionRowView.swift; sourceTree = "<group>"; };
+		82C4241A26D10BEB00EF9010 /* ExplorePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorePageView.swift; sourceTree = "<group>"; };
+		82C4242026D10CBE00EF9010 /* SchedulePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulePageView.swift; sourceTree = "<group>"; };
+		82C4242226D1121000EF9010 /* Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
+		82C4242426D116F800EF9010 /* ProfilePageview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePageview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,6 +259,9 @@
 			isa = PBXGroup;
 			children = (
 				82B0724726D043FB00C06120 /* WelcomePageView.swift */,
+				82C4241A26D10BEB00EF9010 /* ExplorePageView.swift */,
+				82C4242026D10CBE00EF9010 /* SchedulePageView.swift */,
+				82C4242426D116F800EF9010 /* ProfilePageview.swift */,
 				82B0724926D056A200C06120 /* Reusable Views */,
 			);
 			path = "SwiftUI Views";
@@ -276,6 +287,7 @@
 			children = (
 				82B0724026D02F3900C06120 /* Fonts.swift */,
 				82B0724526D0391600C06120 /* Colors.swift */,
+				82C4242226D1121000EF9010 /* Views.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -446,9 +458,13 @@
 				82B0724826D043FB00C06120 /* WelcomePageView.swift in Sources */,
 				82B0724D26D05D9100C06120 /* DiscussionRowView.swift in Sources */,
 				63CE02E3260F4F230046E93B /* SettingsViewController.swift in Sources */,
+				82C4242526D116F800EF9010 /* ProfilePageview.swift in Sources */,
 				63CE02E8260F56550046E93B /* HostingScheduleViewController.swift in Sources */,
 				82B0724B26D056B400C06120 /* SegmentControlView.swift in Sources */,
 				63CE0309260FF6BB0046E93B /* DebateViewController.swift in Sources */,
+				82C4242126D10CBE00EF9010 /* SchedulePageView.swift in Sources */,
+				82C4241B26D10BEB00EF9010 /* ExplorePageView.swift in Sources */,
+				82C4242326D1121000EF9010 /* Views.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

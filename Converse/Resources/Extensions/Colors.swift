@@ -10,6 +10,7 @@ import SwiftUI
 enum CustomColors: String {
     case backgroundBlue
     case offWhite
+    case transBackground
     case primaryBlue, secondaryBlue, tertiaryBlue
 }
 
@@ -24,6 +25,8 @@ extension Color {
     static let primaryBlue = Color(.primaryBlue)
     static let secondaryBlue = Color(.secondaryBlue)
     static let tertiaryBlue = Color(.tertiaryBlue)
+    
+    static let transBackground = Color(.transBackground)
 }
 
 extension UIColor{

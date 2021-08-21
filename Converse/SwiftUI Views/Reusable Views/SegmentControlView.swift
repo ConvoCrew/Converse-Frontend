@@ -18,7 +18,7 @@ struct SegmentControlView: View {
             ForEach(0..<options.count, id:\.self) { i in
                 Text(options[i])
                     .textCase(.uppercase)
-                    .foregroundColor(i==selection ? .secondaryBlue : .white)
+                    .foregroundColor(i==selection ? .secondaryBlue : .offWhite)
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .background(
                         ZStack {

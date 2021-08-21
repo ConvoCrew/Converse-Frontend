@@ -26,11 +26,17 @@ struct Discussion: Identifiable {
     let host: HostUser
     let participants: [ParticipantUser]
     let maxParticipants: Int = 20
+    let isHost: Bool
     let isLive: Bool
     let dateTime: Date = Date(timeIntervalSinceNow: 300)
     
-    static let liveExample = Discussion(title: "Difference between Capitalism & Socialism", category: "Social", host: HostUser(name: "5efa"), participants: [.example], isLive: true)
-    static let upComingExample = Discussion(title: "Algebra Homework Question & Answer", category: "Math", host: .example , participants: [], isLive: false)
+    static let liveExample = Discussion(title: "Difference between Capitalism & Socialism", category: "Social", host: HostUser(name: "5efa"), participants: [.example], isHost: false, isLive: true)
+    static let upComingExample = Discussion(title: "Algebra Homework Question & Answer", category: "Math", host: .example , participants: [], isHost: false, isLive: false)
+    
+    static let hostingExample = Discussion(title: "When and where to take internships", category: "Social", host: .init(name: "You"), participants: Array(repeating: ParticipantUser(name: "You"), count: 19), isHost: true, isLive: false)
+    
+    
+    static let attentingExample = Discussion(title: "When and where to take internships", category: "Social", host: .init(name: "You"), participants: Array(repeating: ParticipantUser(name: "You"), count: 19), isHost: false, isLive: false)
 }
 struct DiscussionRowView: View {
     var discussion: Discussion
@@ -43,7 +49,7 @@ struct DiscussionRowView: View {
             HStack(spacing: 5) {
                 LabelView("Category:", value: "Social")
                 Text("|").foregroundColor(.offWhite)
-                LabelView("Host:", value: discussion.host.name)
+                LabelView("Host:", value: discussion.isHost ? "Me" : discussion.host.name)
             }
             
             
@@ -67,11 +73,17 @@ struct DiscussionRowView: View {
                     
                     Spacer()
                     Button(action: {}, label: {
-                        Text(discussion.isLive ? "Join" : "Remind")
-                            .foregroundColor(.white)
-                            .frame(width: 85, height: 30)
-                            .background(Color.primaryBlue)
-                            .clipShape(Capsule())
+                        Group {
+                            if discussion.isHost {
+                                Text(discussion.isLive ? "Join" : "Remind")
+                            } else {
+                                Text(discussion.isLive ? "Go Live" : "Join")
+                            }
+                        }
+                        .foregroundColor(.white)
+                        .frame(width: 85, height: 30)
+                        .background(Color.primaryBlue)
+                        .clipShape(Capsule())
                     })
                     
                 }
@@ -79,7 +91,7 @@ struct DiscussionRowView: View {
                 
                 HStack {
                     Spacer()
-                    if !discussion.isLive {
+                    if !discussion.isLive || discussion.isHost {
                         Text(discussion.dateTime, style: .relative)
                             .foregroundColor(.primaryBlue)
                     }
@@ -90,7 +102,7 @@ struct DiscussionRowView: View {
         }
         
         .foregroundColor(.white)
-        .padding(.bottom, 10)
+        .padding(.bottom, 5)
     }
 }
 
