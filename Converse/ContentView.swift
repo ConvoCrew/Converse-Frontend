@@ -19,35 +19,29 @@ struct ContentView: View {
                 CreateRoomView()
                     .tabItem {
                         Label("Create Room", systemImage: "house")
-                    }
-                    .tag(0)
+                    }.tag(0)
                 
                 ExplorePageView()
                     .tabItem {
                         Label("Explore Room", systemImage: "book")
-                    }
-                    .tag(1)
+                    }.tag(1)
 
                 SchedulePageView()
                     .tabItem {
                         Label("Schedule Room", systemImage: "alarm")
-                    }
-                    .tag(2)
+                    }.tag(2)
                 
                 ProfilePageview()
                     .tabItem {
                         Label("Profile", systemImage: "person")
-                    }
-                    .tag(3)
+                    }.tag(3)
             }
             
-            
-//            GeometryReader { _ in
-                VStack {
-                    Spacer()
-                    TabBarView(selection: $selectedTab)
-                }
-                .ignoresSafeArea()
+            VStack(spacing: 0) {
+                Spacer()
+                TabBarView(selection: $selectedTab)
+            }
+            .ignoresSafeArea()
         }
     }
 }
