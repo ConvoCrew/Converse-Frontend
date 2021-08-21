@@ -10,7 +10,7 @@ import SwiftUI
 struct CreateRoomView: View {
     @State private var roomCode = ""
     var body: some View {
-        VStack(spacing: 20) {
+        VStack(spacing: 25) {
             Text("Create Room")
                 .largeTitle()
             

@@ -33,10 +33,10 @@ struct Discussion: Identifiable {
     static let liveExample = Discussion(title: "Difference between Capitalism & Socialism", category: "Social", host: HostUser(name: "5efa"), participants: [.example], isHost: false, isLive: true)
     static let upComingExample = Discussion(title: "Algebra Homework Question & Answer", category: "Math", host: .example , participants: [], isHost: false, isLive: false)
     
-    static let hostingExample = Discussion(title: "When and where to take internships", category: "Social", host: .init(name: "You"), participants: Array(repeating: ParticipantUser(name: "You"), count: 19), isHost: true, isLive: false)
+    static let hostingExample = Discussion(title: "When and where to take internships", category: "Social", host: .init(name: "Me"), participants: Array(repeating: ParticipantUser(name: "Alex"), count: 19), isHost: true, isLive: false)
     
     
-    static let attentingExample = Discussion(title: "When and where to take internships", category: "Social", host: .init(name: "You"), participants: Array(repeating: ParticipantUser(name: "You"), count: 19), isHost: false, isLive: false)
+    static let attentingExample = Discussion(title: "When and where to take internships", category: "Social", host: .init(name: "Me"), participants: Array(repeating: ParticipantUser(name: "Smith"), count: 19), isHost: false, isLive: false)
 }
 struct DiscussionRowView: View {
     var discussion: Discussion

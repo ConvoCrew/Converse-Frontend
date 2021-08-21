@@ -25,7 +25,7 @@ struct ExplorePageView: View {
             
             ScrollView(.vertical, showsIndicators: true) {
                 VStack {
-                    ForEach(0 ..< 15) { _ in
+                    ForEach(0 ..< 8) { _ in
                         if selection == 0 {
                             DiscussionRowView(discussion: .liveExample)
                         } else {
