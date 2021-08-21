@@ -32,6 +32,7 @@
 		63CE03222610763F0046E93B /* AddToScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CE03212610763F0046E93B /* AddToScheduleViewController.swift */; };
 		63CE03272610831A0046E93B /* LiveNowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CE03262610831A0046E93B /* LiveNowViewController.swift */; };
 		63CE032C2610833F0046E93B /* UpcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CE032B2610833F0046E93B /* UpcomingViewController.swift */; };
+		82AA663926D125B6005DD590 /* CreateRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AA663826D125B6005DD590 /* CreateRoomView.swift */; };
 		82B0723A26D02DF300C06120 /* Product Sans Bold Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 82B0723626D02DF300C06120 /* Product Sans Bold Italic.ttf */; };
 		82B0723B26D02DF300C06120 /* Product Sans Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 82B0723726D02DF300C06120 /* Product Sans Bold.ttf */; };
 		82B0723C26D02DF300C06120 /* Product Sans Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 82B0723826D02DF300C06120 /* Product Sans Italic.ttf */; };
@@ -97,6 +98,7 @@
 		63CE03212610763F0046E93B /* AddToScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToScheduleViewController.swift; sourceTree = "<group>"; };
 		63CE03262610831A0046E93B /* LiveNowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveNowViewController.swift; sourceTree = "<group>"; };
 		63CE032B2610833F0046E93B /* UpcomingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingViewController.swift; sourceTree = "<group>"; };
+		82AA663826D125B6005DD590 /* CreateRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoomView.swift; sourceTree = "<group>"; };
 		82B0723626D02DF300C06120 /* Product Sans Bold Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Product Sans Bold Italic.ttf"; sourceTree = "<group>"; };
 		82B0723726D02DF300C06120 /* Product Sans Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Product Sans Bold.ttf"; sourceTree = "<group>"; };
 		82B0723826D02DF300C06120 /* Product Sans Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Product Sans Italic.ttf"; sourceTree = "<group>"; };
@@ -259,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				82B0724726D043FB00C06120 /* WelcomePageView.swift */,
+				82AA663826D125B6005DD590 /* CreateRoomView.swift */,
 				82C4241A26D10BEB00EF9010 /* ExplorePageView.swift */,
 				82C4242026D10CBE00EF9010 /* SchedulePageView.swift */,
 				82C4242426D116F800EF9010 /* ProfilePageview.swift */,
@@ -455,6 +458,7 @@
 				63CE0318261074280046E93B /* BackStageViewController.swift in Sources */,
 				63CE03222610763F0046E93B /* AddToScheduleViewController.swift in Sources */,
 				63CE03272610831A0046E93B /* LiveNowViewController.swift in Sources */,
+				82AA663926D125B6005DD590 /* CreateRoomView.swift in Sources */,
 				82B0724826D043FB00C06120 /* WelcomePageView.swift in Sources */,
 				82B0724D26D05D9100C06120 /* DiscussionRowView.swift in Sources */,
 				63CE02E3260F4F230046E93B /* SettingsViewController.swift in Sources */,

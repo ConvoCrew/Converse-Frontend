@@ -10,8 +10,27 @@ import SwiftUI
 struct ContentView: View {
     
     var body: some View {
-        VStack {
+        TabView {
+            
+            CreateRoomView()
+                .tabItem {
+                    Label("Create Room", systemImage: "house")
+                }
+            
             ExplorePageView()
+                .tabItem {
+                    Label("Explore Room", systemImage: "book")
+                }
+
+            SchedulePageView()
+                .tabItem {
+                    Label("Schedule Room", systemImage: "alarm")
+                }
+            
+            ProfilePageview()
+                .tabItem {
+                    Label("Profile", systemImage: "person")
+                }
         }
     }
 }

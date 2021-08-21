@@ -17,3 +17,28 @@ extension Text {
             .lineLimit(1)
     }
 }
+
+extension View {
+    
+    /// A View's extension for dismissing keyboard when the views is tapped
+    /// - Returns: A View which when tapped dismisses the keyboard if it is shown
+    var dissmissKeyBoardOnTap: some View {
+        self.onTapGesture {
+            withAnimation {
+                hideKeyboard()
+            }
+        }
+    }
+    
+    /// Used for to dismiss Keyboard
+    func hideKeyboard() {
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
+}
+
+
+
+/// Used for to dismiss Keyboard
+//func hideKeyboard() {
+//    UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+//}

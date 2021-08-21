@@ -32,7 +32,7 @@ struct SchedulePageView: View {
                 .padding(.horizontal, 6)
             }
         }
-        .padding([.horizontal])
+        .padding([.horizontal,.top])
         .foregroundColor(.white)
         .background(Color.backgroundBlue.ignoresSafeArea())
     }

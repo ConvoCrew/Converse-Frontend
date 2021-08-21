@@ -36,7 +36,7 @@ struct ProfilePageview: View {
                 Color.offWhite.frame(height: 1)
                
                 
-                VStack(alignment: .leading, spacing: 20) {
+                VStack(alignment: .leading, spacing: 15) {
                     
                     Toggle(isOn: .constant(true)){
                         VStack(alignment: .leading) {
@@ -48,7 +48,7 @@ struct ProfilePageview: View {
                         }
                     }
                     .toggleStyle(SwitchToggleStyle(tint: .primaryBlue))
-                    .padding(.vertical)
+                    .padding(.vertical, 18)
                     
                     
                     Button(action: {}, label: {
