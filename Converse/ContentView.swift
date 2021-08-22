@@ -43,6 +43,9 @@ struct ContentView: View {
             }
             .ignoresSafeArea()
         }
+        .onAppear() {
+            NotificationManager.shared.requestNotificationAuthorization()
+        }
     }
 }
 

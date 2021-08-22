@@ -51,7 +51,9 @@ struct ProfilePageview: View {
                     .padding(.vertical, 18)
                     
                     
-                    Button(action: {}, label: {
+                    Button(action: {
+                        NotificationManager.shared.scheduleNotification()
+                    }, label: {
                         HStack(spacing: 0) {
                             Text("Connect account")
                             Spacer()

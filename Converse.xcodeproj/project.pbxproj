@@ -33,6 +33,7 @@
 		63CE03272610831A0046E93B /* LiveNowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CE03262610831A0046E93B /* LiveNowViewController.swift */; };
 		63CE032C2610833F0046E93B /* UpcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CE032B2610833F0046E93B /* UpcomingViewController.swift */; };
 		8241008A26D17679009464CC /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241008926D17679009464CC /* TabBarView.swift */; };
+		8273516726D28144004296FE /* LocalNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8273516626D28144004296FE /* LocalNotification.swift */; };
 		82AA663926D125B6005DD590 /* CreateRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AA663826D125B6005DD590 /* CreateRoomView.swift */; };
 		82B0723A26D02DF300C06120 /* Product Sans Bold Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 82B0723626D02DF300C06120 /* Product Sans Bold Italic.ttf */; };
 		82B0723B26D02DF300C06120 /* Product Sans Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 82B0723726D02DF300C06120 /* Product Sans Bold.ttf */; };
@@ -100,6 +101,7 @@
 		63CE03262610831A0046E93B /* LiveNowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveNowViewController.swift; sourceTree = "<group>"; };
 		63CE032B2610833F0046E93B /* UpcomingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingViewController.swift; sourceTree = "<group>"; };
 		8241008926D17679009464CC /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		8273516626D28144004296FE /* LocalNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotification.swift; sourceTree = "<group>"; };
 		82AA663826D125B6005DD590 /* CreateRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoomView.swift; sourceTree = "<group>"; };
 		82B0723626D02DF300C06120 /* Product Sans Bold Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Product Sans Bold Italic.ttf"; sourceTree = "<group>"; };
 		82B0723726D02DF300C06120 /* Product Sans Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Product Sans Bold.ttf"; sourceTree = "<group>"; };
@@ -255,6 +257,7 @@
 		82B0723326D02D9C00C06120 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				8273516626D28144004296FE /* LocalNotification.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -461,6 +464,7 @@
 				63CE0318261074280046E93B /* BackStageViewController.swift in Sources */,
 				8241008A26D17679009464CC /* TabBarView.swift in Sources */,
 				63CE03222610763F0046E93B /* AddToScheduleViewController.swift in Sources */,
+				8273516726D28144004296FE /* LocalNotification.swift in Sources */,
 				63CE03272610831A0046E93B /* LiveNowViewController.swift in Sources */,
 				82AA663926D125B6005DD590 /* CreateRoomView.swift in Sources */,
 				82B0724826D043FB00C06120 /* WelcomePageView.swift in Sources */,
