@@ -49,6 +49,8 @@
 		82C4242126D10CBE00EF9010 /* SchedulePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C4242026D10CBE00EF9010 /* SchedulePageView.swift */; };
 		82C4242326D1121000EF9010 /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C4242226D1121000EF9010 /* Views.swift */; };
 		82C4242526D116F800EF9010 /* ProfilePageview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C4242426D116F800EF9010 /* ProfilePageview.swift */; };
+		BA281F0526D47F240074FF3B /* GoLive.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA281F0426D47F240074FF3B /* GoLive.swift */; };
+		BA281F0926D482350074FF3B /* userListIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA281F0826D482350074FF3B /* userListIcon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +119,8 @@
 		82C4242026D10CBE00EF9010 /* SchedulePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulePageView.swift; sourceTree = "<group>"; };
 		82C4242226D1121000EF9010 /* Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
 		82C4242426D116F800EF9010 /* ProfilePageview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePageview.swift; sourceTree = "<group>"; };
+		BA281F0426D47F240074FF3B /* GoLive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoLive.swift; sourceTree = "<group>"; };
+		BA281F0826D482350074FF3B /* userListIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userListIcon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,6 +275,7 @@
 				82C4242026D10CBE00EF9010 /* SchedulePageView.swift */,
 				82C4242426D116F800EF9010 /* ProfilePageview.swift */,
 				8241008926D17679009464CC /* TabBarView.swift */,
+				BA281F0426D47F240074FF3B /* GoLive.swift */,
 				82B0724926D056A200C06120 /* Reusable Views */,
 			);
 			path = "SwiftUI Views";
@@ -306,6 +311,7 @@
 			children = (
 				82B0724A26D056B400C06120 /* SegmentControlView.swift */,
 				82B0724C26D05D9100C06120 /* DiscussionRowView.swift */,
+				BA281F0826D482350074FF3B /* userListIcon.swift */,
 			);
 			path = "Reusable Views";
 			sourceTree = "<group>";
@@ -457,6 +463,7 @@
 				63CE02D9260F42750046E93B /* WelcomeViewController.swift in Sources */,
 				63CE031D261074F50046E93B /* HostNotesViewController.swift in Sources */,
 				82B0724426D0383700C06120 /* ContentView.swift in Sources */,
+				BA281F0526D47F240074FF3B /* GoLive.swift in Sources */,
 				82B0724626D0391600C06120 /* Colors.swift in Sources */,
 				63CE02F2260F5A670046E93B /* CreateRoomViewController.swift in Sources */,
 				63CE02A3260F35C80046E93B /* AppDelegate.swift in Sources */,
@@ -472,6 +479,7 @@
 				63CE02E3260F4F230046E93B /* SettingsViewController.swift in Sources */,
 				82C4242526D116F800EF9010 /* ProfilePageview.swift in Sources */,
 				63CE02E8260F56550046E93B /* HostingScheduleViewController.swift in Sources */,
+				BA281F0926D482350074FF3B /* userListIcon.swift in Sources */,
 				82B0724B26D056B400C06120 /* SegmentControlView.swift in Sources */,
 				63CE0309260FF6BB0046E93B /* DebateViewController.swift in Sources */,
 				82C4242126D10CBE00EF9010 /* SchedulePageView.swift in Sources */,
