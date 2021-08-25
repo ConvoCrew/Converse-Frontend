@@ -10,7 +10,7 @@ import SwiftUI
 struct GoLive: View {
     var body: some View {
         ZStack {
-            Color("backgroundBlue").ignoresSafeArea()
+            Color(#colorLiteral(red: 0.05484384298, green: 0.06042201072, blue: 0.1235707179, alpha: 1)).ignoresSafeArea()
             
             VStack(alignment: .leading) {
                 Text("Difference b/n Capitalism & Socialism")
