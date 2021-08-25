@@ -1,5 +1,5 @@
 //
-//  FilterByView.swift
+//  FilterByCategoryView.swift
 //  Converse
 //
 //  Created by Cédric Bahirwe on 25/08/2021.
@@ -7,7 +7,8 @@
 
 import SwiftUI
 
-struct FilterByView: View {
+struct FilterByCategoryView: View {
+    @Binding var isPresented: Bool
     var body: some View {
         ZStack {
             VStack(alignment: .leading, spacing: 6) {
@@ -32,7 +33,9 @@ struct FilterByView: View {
                 
                 HStack {
                     Spacer()
-                    Button(action: {}) {
+                    Button(action: {
+                        isPresented.toggle()
+                    }) {
                         Text("Done")
                             .font(.prodSans(.bold))
                             .frame(width: 100, height: 40)
@@ -54,9 +57,8 @@ struct FilterByView: View {
     }
 }
 
-struct FilterByView_Previews: PreviewProvider {
+struct FilterByCategoryView_Previews: PreviewProvider {
     static var previews: some View {
-        FilterByView()
-//            .preferredColorScheme(.dark)
+        FilterByCategoryView(isPresented: .constant(true))
     }
 }
