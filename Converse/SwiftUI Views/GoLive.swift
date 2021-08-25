@@ -46,10 +46,16 @@ struct GoLive: View {
                     .font(.prodSans(.bold,size: 20))
                     .foregroundColor(Color(#colorLiteral(red: 0.2099429369, green: 0.4875565171, blue: 0.9146992564, alpha: 1)))
                 
-                RoundedRectangle(cornerRadius: 15)
-                    .frame(height: 70)
-                    .foregroundColor(Color(#colorLiteral(red: 0.1434547901, green: 0.1532291174, blue: 0.2099429369, alpha: 1)))
-                    .padding(.bottom)
+                ZStack {
+                    RoundedRectangle(cornerRadius: 15)
+                        .frame(height: 70)
+                        .foregroundColor(Color(#colorLiteral(red: 0.1434547901, green: 0.1532291174, blue: 0.2099429369, alpha: 1)))
+                        .padding(.bottom)
+                    
+                    Image("admit")
+                        .resizable()
+                        .frame(width: 50, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                }
                 
                 Text("Tap to invite friends or use code: 11111")
                     .frame(maxWidth: .infinity, alignment: .center)
