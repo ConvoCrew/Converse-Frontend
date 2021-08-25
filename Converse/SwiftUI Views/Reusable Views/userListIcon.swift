@@ -21,14 +21,14 @@ struct userListIcon: View {
                 Image("avatar.girl")
                     .resizable()
                     .frame(width: 60, height: 60)
-        
+                
             }
             
             Text("Erica")
                 .font(.prodSans(.bold,size: 25))
                 .foregroundColor(Color(#colorLiteral(red: 0.7530786395, green: 0.8206391931, blue: 0.925021708, alpha: 1)))
                 .scaledToFit()
-                //.minimumScaleFactor(0.4)
+            //.minimumScaleFactor(0.4)
             
             Image(systemName: "mic")
                 .resizable()
@@ -43,6 +43,8 @@ struct userListIcon: View {
 
 struct userListIcon_Previews: PreviewProvider {
     static var previews: some View {
-        userListIcon().preferredColorScheme(.dark)
+        userListIcon()
+            .preferredColorScheme(.dark)
+            .previewLayout(.fixed(width: 200, height: 200))
     }
 }
