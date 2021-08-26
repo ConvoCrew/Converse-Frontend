@@ -53,6 +53,7 @@
 		BA281F0526D47F240074FF3B /* GoLive.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA281F0426D47F240074FF3B /* GoLive.swift */; };
 		BA281F0926D482350074FF3B /* userListIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA281F0826D482350074FF3B /* userListIcon.swift */; };
 		BA2D055326D6F6CD006BF6DC /* iconStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2D055226D6F6CD006BF6DC /* iconStack.swift */; };
+		BA2D055526D72CCC006BF6DC /* AdmitParticiants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2D055426D72CCC006BF6DC /* AdmitParticiants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +126,7 @@
 		BA281F0426D47F240074FF3B /* GoLive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoLive.swift; sourceTree = "<group>"; };
 		BA281F0826D482350074FF3B /* userListIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userListIcon.swift; sourceTree = "<group>"; };
 		BA2D055226D6F6CD006BF6DC /* iconStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iconStack.swift; sourceTree = "<group>"; };
+		BA2D055426D72CCC006BF6DC /* AdmitParticiants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdmitParticiants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -280,6 +282,7 @@
 				82C4242426D116F800EF9010 /* ProfilePageview.swift */,
 				8241008926D17679009464CC /* TabBarView.swift */,
 				BA281F0426D47F240074FF3B /* GoLive.swift */,
+				BA2D055426D72CCC006BF6DC /* AdmitParticiants.swift */,
 				82B0724926D056A200C06120 /* Reusable Views */,
 			);
 			path = "SwiftUI Views";
@@ -484,6 +487,7 @@
 				82AA663926D125B6005DD590 /* CreateRoomView.swift in Sources */,
 				82B0724826D043FB00C06120 /* WelcomePageView.swift in Sources */,
 				82B0724D26D05D9100C06120 /* DiscussionRowView.swift in Sources */,
+				BA2D055526D72CCC006BF6DC /* AdmitParticiants.swift in Sources */,
 				63CE02E3260F4F230046E93B /* SettingsViewController.swift in Sources */,
 				82C4242526D116F800EF9010 /* ProfilePageview.swift in Sources */,
 				63CE02E8260F56550046E93B /* HostingScheduleViewController.swift in Sources */,
