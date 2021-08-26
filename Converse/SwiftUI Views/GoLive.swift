@@ -33,6 +33,9 @@ struct GoLive: View {
                         userListIcon()
                         userListIcon()
                         userListIcon()
+                        userListIcon()
+                        userListIcon()
+                        userListIcon()
                     }
                 }
                 
@@ -50,14 +53,20 @@ struct GoLive: View {
                     RoundedRectangle(cornerRadius: 15)
                         .frame(height: 70)
                         .foregroundColor(Color(#colorLiteral(red: 0.1434547901, green: 0.1532291174, blue: 0.2099429369, alpha: 1)))
-                        .padding(.bottom)
-                    
-                    Image("admit")
-                        .resizable()
-                        .frame(width: 50, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .padding()
+                        .overlay(
+                            HStack {
+                                iconStack(imageName: "admit", imageText: "Admit")
+                                iconStack(imageName: "carbon_microphone-1", imageText: "Mute")
+                                iconStack(imageName: "Group", imageText: "Deafen")
+                                iconStack(imageName: "screenshare", imageText: "Screenshare")
+                                iconStack(imageName: "remove", imageText: "Remove")
+                                iconStack(imageName: "gridicons_sign-out", imageText: "End")
+                            }
+                        )
                 }
                 
-                Text("Tap to invite friends or use code: 11111")
+                Text("🏠 Tap to invite friends or use code: 11111")
                     .frame(maxWidth: .infinity, alignment: .center)
                     .font(.prodSans(.bold,size: 17))
                     .foregroundColor(.white)
