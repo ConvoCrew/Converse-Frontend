@@ -16,7 +16,7 @@ enum ProductSansFont: String {
 
 extension Font {
     static func prodSans(_ name: ProductSansFont = .regular,
-                         _ size: CGFloat) -> Font {
+                         size: CGFloat = 16) -> Font {
         Font.custom(name.rawValue, size: size)
     }
     
