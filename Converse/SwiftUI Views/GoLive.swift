@@ -29,13 +29,13 @@ struct GoLive: View {
                 
                 ScrollView {
                     LazyVGrid(columns: columns){
-                        userListIcon()
-                        userListIcon()
-                        userListIcon()
-                        userListIcon()
-                        userListIcon()
-                        userListIcon()
-                        userListIcon()
+                        ParticipantUserView()
+                        ParticipantUserView()
+                        ParticipantUserView()
+                        ParticipantUserView()
+                        ParticipantUserView()
+                        ParticipantUserView()
+                        ParticipantUserView()
                     }
                 }
                 

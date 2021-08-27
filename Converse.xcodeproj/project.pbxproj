@@ -49,9 +49,9 @@
 		82C4242126D10CBE00EF9010 /* SchedulePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C4242026D10CBE00EF9010 /* SchedulePageView.swift */; };
 		82C4242326D1121000EF9010 /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C4242226D1121000EF9010 /* Views.swift */; };
 		82C4242526D116F800EF9010 /* ProfilePageview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C4242426D116F800EF9010 /* ProfilePageview.swift */; };
+		82CC4C4926D994E10065A6AB /* ParticipantUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CC4C4826D994E10065A6AB /* ParticipantUserView.swift */; };
 		82E48EA526D6DF6700CCF3C7 /* FilterByCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E48EA426D6DF6700CCF3C7 /* FilterByCategoryView.swift */; };
 		BA281F0526D47F240074FF3B /* GoLive.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA281F0426D47F240074FF3B /* GoLive.swift */; };
-		BA281F0926D482350074FF3B /* userListIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA281F0826D482350074FF3B /* userListIcon.swift */; };
 		BA2D055326D6F6CD006BF6DC /* iconStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2D055226D6F6CD006BF6DC /* iconStack.swift */; };
 		BA2D055526D72CCC006BF6DC /* AdmitParticiants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2D055426D72CCC006BF6DC /* AdmitParticiants.swift */; };
 /* End PBXBuildFile section */
@@ -122,9 +122,9 @@
 		82C4242026D10CBE00EF9010 /* SchedulePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulePageView.swift; sourceTree = "<group>"; };
 		82C4242226D1121000EF9010 /* Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
 		82C4242426D116F800EF9010 /* ProfilePageview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePageview.swift; sourceTree = "<group>"; };
+		82CC4C4826D994E10065A6AB /* ParticipantUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantUserView.swift; sourceTree = "<group>"; };
 		82E48EA426D6DF6700CCF3C7 /* FilterByCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterByCategoryView.swift; sourceTree = "<group>"; };
 		BA281F0426D47F240074FF3B /* GoLive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoLive.swift; sourceTree = "<group>"; };
-		BA281F0826D482350074FF3B /* userListIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userListIcon.swift; sourceTree = "<group>"; };
 		BA2D055226D6F6CD006BF6DC /* iconStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iconStack.swift; sourceTree = "<group>"; };
 		BA2D055426D72CCC006BF6DC /* AdmitParticiants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdmitParticiants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -318,7 +318,7 @@
 			children = (
 				82B0724A26D056B400C06120 /* SegmentControlView.swift */,
 				82B0724C26D05D9100C06120 /* DiscussionRowView.swift */,
-				BA281F0826D482350074FF3B /* userListIcon.swift */,
+				82CC4C4826D994E10065A6AB /* ParticipantUserView.swift */,
 				82E48EA426D6DF6700CCF3C7 /* FilterByCategoryView.swift */,
 				BA2D055226D6F6CD006BF6DC /* iconStack.swift */,
 			);
@@ -491,12 +491,12 @@
 				63CE02E3260F4F230046E93B /* SettingsViewController.swift in Sources */,
 				82C4242526D116F800EF9010 /* ProfilePageview.swift in Sources */,
 				63CE02E8260F56550046E93B /* HostingScheduleViewController.swift in Sources */,
-				BA281F0926D482350074FF3B /* userListIcon.swift in Sources */,
 				82B0724B26D056B400C06120 /* SegmentControlView.swift in Sources */,
 				63CE0309260FF6BB0046E93B /* DebateViewController.swift in Sources */,
 				82C4242126D10CBE00EF9010 /* SchedulePageView.swift in Sources */,
 				82C4241B26D10BEB00EF9010 /* ExplorePageView.swift in Sources */,
 				82C4242326D1121000EF9010 /* Views.swift in Sources */,
+				82CC4C4926D994E10065A6AB /* ParticipantUserView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

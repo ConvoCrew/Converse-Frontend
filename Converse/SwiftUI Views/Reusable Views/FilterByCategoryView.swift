@@ -60,5 +60,6 @@ struct FilterByCategoryView: View {
 struct FilterByCategoryView_Previews: PreviewProvider {
     static var previews: some View {
         FilterByCategoryView(isPresented: .constant(true))
+            .previewLayout(.fixed(width: 400, height: 400))
     }
 }
